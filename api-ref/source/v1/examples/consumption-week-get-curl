@@ -1,0 +1,2 @@
+curl -G 'https://api-enterprise-dashboard.otc-service.com/v1/consumption/week?year=2020\&week=33' \
+    -H 'Authorization: Bearer {API_Key}'

@@ -1,0 +1,115 @@
+###############################################################################
+# Path fields
+###############################################################################
+###############################################################################
+# Query fields
+###############################################################################
+consumption_date-query:
+  description: |
+    Return the data of the selected date.
+  in: query
+  required: false
+  type: string
+month:
+  description: |
+    Return the data of the selected month.
+  in: query
+  required: true
+  type: integer
+week:
+  description: |
+    Return the data of the selected week.
+  in: query
+  required: true
+  type: integer
+year:
+  description: |
+    The selected year.
+  in: query
+  required: true
+  type: integer
+
+###############################################################################
+# Body fields
+###############################################################################
+consumption_date:
+  description: |
+    This field displays the date the service was consumed.
+
+    format = YYYY-MM-DD
+  in: body
+  required: false
+  type: string
+contract:
+  description: |
+    To filter based on contract.
+  in: body
+  required: false
+  type: integer
+key_name:
+  description: |
+    Name of the API key.
+  in: body
+  required: true
+  type: string
+limit:
+  description: |
+    Limits the number consumption data to be returned.
+
+    default = 10, min = 1, max = 100
+  in: body
+  required: false
+  type: integer
+offset:
+  description: |
+    Allows you to fetch next set of consumption data.
+
+    default = 0, min = 0
+  in: body
+  required: false
+  type: integer
+product:
+  description: |
+    To filter based on Product Id.
+
+    min = 1, max = 32
+  in: body
+  required: false
+  type: integer
+product_description:
+  description: |
+    To filter baes on Product Description.
+  in: body
+  required: false
+  type: string
+project_name:
+  description: |
+    This field displays your project name like "eu-de"
+  in: body
+  required: false
+  type: string
+resource_id:
+  description: |
+    This field displays the resource id. This field is a unique identifier for all services.
+  in: body
+  required: false
+  type: string
+tag_key:
+  description: |
+    This field displays the tag key attached to a resource.
+  in: body
+  required: false
+  type: string
+tag_value:
+  description: |
+    This field displays the tag value. Please note that tags are a pair of tag key and tag value.
+  in: body
+  required: false
+  type: string
+tagged:
+  description: |
+    This field decides if the tagged resources should be filtered or not.
+  in: body
+  required: false
+  type: boolean
+
