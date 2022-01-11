@@ -148,4 +148,4 @@ html_title = "Elastic Load Balancing UMN"
 # html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'elbdoc'
+htmlhelp_basename = 'eddoc'

@@ -1,0 +1,6 @@
+curl -G 'https://api-enterprise-dashboard.otc-service.com/v1/consumption' \
+    -H 'Authorization: Bearer {API_Key}' \
+    --data-urlencode offset=0 \
+    --data-urlencode limit=10 \
+--data-raw '{
+    "contract": 1000021234}'
