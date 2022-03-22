@@ -149,3 +149,10 @@ html_title = "Elastic Load Balancing UMN"
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'eddoc'
+
+latex_documents = [
+    ('index',
+     'umn-enterprise-dashboard.tex',
+     u'%s User Manual Documentation' % project,
+     u'OpenTelekomCloud', 'manual'),
+]
