@@ -18,6 +18,7 @@ import os
 import sys
 
 extensions = [
+    'otc_api_ref',
     'otcdocstheme'
 ]
 
