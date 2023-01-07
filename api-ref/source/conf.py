@@ -18,7 +18,6 @@ import os
 import sys
 
 extensions = [
-    'otc_api_ref',
     'otcdocstheme'
 ]
 
@@ -89,6 +88,9 @@ html_title = "Enterprise Dashboard - API Reference"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Do not include sources into the rendered results
+html_copy_source = False
 
 # -- Options for PDF output --------------------------------------------------
 latex_documents = []
