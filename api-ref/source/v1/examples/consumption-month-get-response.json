@@ -1,0 +1,25 @@
+{
+    "total": 261,
+    "kind": "Collection",
+    "contents": [
+        {
+            "kind": "Consumption",
+            "contract": 1000021234,
+            "business_partner_id": 12345,
+            "reseller_id": 12345,
+            "quantity_unit": "H",
+            "consumption_date": "2020-02-01 00:00:00",
+            "unit_price": 2.19,
+            "listprice_amount": 52.56,
+            "amount": 42.048,
+            "product": "OTC_D24XL8_LI",
+            "product_description": "Disk Intensive d2.4xl.8 Linux",
+            "project_id": "499378d37f2b4b93a85d81df93fe2d2f",
+            "resource_id": "129dea56-f552-4db9-8caf-1e3fea3d78cb",
+            "billing_quantity": 24.0,
+            "project_name": "eu-de",
+            "consumption_type_description": "Usage for PLM Cloud with price",
+            "region": "EU-DE"
+        },
+    ]
+}
