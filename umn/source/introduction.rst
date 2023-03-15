@@ -6,11 +6,8 @@ billing data. It allows to check spendings for Open Telekom Cloud
 infrastructure. It comes with dedicated views for specific domains and
 their cost drivers.
 
-Enterprise Dashboard can be accessed by visiting the following URL:
-
-  https://enterprise-dashboard.otc-service.com
-
-To enter Enterprise Dashboard you need to enter your credentials. Your
+To enter the `Enterprise Dashboard Service <https://enterprise-dashboard.otc-service.com>`__,
+you need to enter your credentials. Your
 email and password are required. You will receive an invitation for
 Enterprise Dashboard, once the order is confirmed and processed. With
 this invitation, you can set the password of your user account.
@@ -22,14 +19,6 @@ lower cases before clicking Log In.
 only. Please contact either your contractual partner to set up your
 access or contact Request-OpenTelekomCloud@telekom.de.
 
-
-API
----
-
-Most functionality of the Enterprise Dashboard is also available via
-an REST HTTP endpoint for integration in other applications. Please
-refer to the `Enterprise Dashboard API Reference
-<https://docs.otc.t-systems.com/enterprise-dashboard/api-ref/>`__
 
 Monitor Spendings on a Payer Level
 ----------------------------------
@@ -108,5 +97,14 @@ user groups, and dashboards.
 In a scenario like above, where User B is not allowed to access
 certain tenants, you can separate those tenants and give User B access
 to that organization and therefore access to the global dashboard.
+
+
+API
+---
+
+Most functionality of the Enterprise Dashboard is also available via
+an REST HTTP endpoint for integration in other applications. Please
+refer to the `Enterprise Dashboard API Reference
+<https://docs.otc.t-systems.com/enterprise-dashboard/api-ref/>`__.
 
 
