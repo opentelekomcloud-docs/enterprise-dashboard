@@ -29,8 +29,7 @@ API
 Most functionality of the Enterprise Dashboard is also available via
 an REST HTTP endpoint for integration in other applications. Please
 refer to the `Enterprise Dashboard API Reference
-<https://enterprise-dashboard.obs.eu-de.otc.t-systems.com/OTC%20Enterprise%20Dashboard%20API%20Reference.pdf>`__
-
+<https://docs.otc.t-systems.com/enterprise-dashboard/api-ref/>`__
 
 Monitor Spendings on a Payer Level
 ----------------------------------

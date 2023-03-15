@@ -1,18 +1,11 @@
 Appendix
 ========
 
-Find a list of used abbreviations in the glossary and review updates
-of this document and the service in this section.
-
-Abbreviations
--------------
-
 No special abbreviations are used in this document. If you want to
 have a look at generally used abbreviations in Open Telekom Cloud,
 please check the Help Center:
 
-  https://docs.otc.t-systems.com/en-us/glossary/index.html
-
+  https://docs.otc.t-systems.com/additional/glossary.html
 	    
 Change history
 --------------
@@ -192,17 +185,3 @@ Change history
 | 1.38    | Jan 11,  | Add `capacity EIP                               |
 |         | 23       | table <#business.dim_ol_capacity_eip>`__        |
 +---------+----------+-------------------------------------------------+
-
-
-.. |image1| image:: media/image18.png
-   :width: 6.61667in
-   :height: 2.825in
-.. |image2| image:: media/image22.png
-   :width: 6.5in
-   :height: 3.48958in
-.. |image3| image:: media/image23.png
-   :width: 6.39583in
-   :height: 1.73958in
-.. |image4| image:: media/image25.png
-   :width: 6.46875in
-   :height: 3.425in

@@ -82,9 +82,8 @@ Consumption view with Tags
 
 The Dashboard “Tenant consumption view with Tags” displays your
 invoice data with a focus on those resources, which have been
-tagged. `Tag Management Service
-<https://docs.otc.t-systems.com/en-us/tms/index.html>`__ is an
-Openstack Service that allows the user to add up to 20 additional
+tagged. `Tag Management Service <https://docs.otc.t-systems.com/tag-management-service/umn/>`__
+is an Openstack Service that allows the user to add up to 20 additional
 metadata tags to a virtual machine or data disk (and several other
 resources). The cost of these machines is visible in the CSV file of
 your invoice.
@@ -152,8 +151,8 @@ For example, this allows you to observe the spending of Cloud
 Container Engine, already mentioned in Chapter 3.2.4, but across all
 your tenants, see screenshot below:
 
-|image01|
-
+.. image:: media/image18.png
+   :width: 6.3in
 
 Alerts
 ~~~~~~
@@ -187,7 +186,10 @@ or launch from the side panel
    :width: 2.25833in
    :height: 4.25833in
 
-2. You will be forwarded to the alert page. |image02|
+2. You will be forwarded to the alert page.
+
+.. image:: media/image22.png
+   :width: 6.3in
 
 3. Define conditions for your alert. The following variables are
    important during the creation of an alert:
@@ -208,7 +210,10 @@ or launch from the side panel
 
 4. Set the alert condition like in below screenshot if the alert
    condition exists for more that 5 min alert actions will be
-   executed. |image03|
+   executed.
+
+.. image:: media/image23.png
+   :width: 6.3in
 
 5. Add the alert details like alert name and group it belongs etc.
 
@@ -217,16 +222,11 @@ or launch from the side panel
    :height: 2.5625in
 
 8. Finally set the alert contact or silent conditions to reduce large
-   no alerts. |image04|
+   no alerts.
+
+.. image:: media/image25.png
+   :width: 6.3in
 
 You can create alarms and notification channels as Editor or Admin of
 an organization. Ask your organization administrator for permission if
 you want to use this.
-
-.. |image01| image:: /media/image01.png
-   :width: 4in
-   :height: 2in
-		     
-.. |image02| image:: /media/image02.png
-.. |image03| image:: /media/image03.png
-.. |image04| image:: /media/image04.png
