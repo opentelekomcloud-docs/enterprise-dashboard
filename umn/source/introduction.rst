@@ -15,7 +15,7 @@ this invitation, you can set the password of your user account.
 Your email and password are case-sensitive. Please check upper and
 lower cases before clicking Log In.
 
-.. note:
+.. note::
    
    Enterprise Dashboard is offered via Direct sales only. Please
    contact either your contractual partner to set up your access or
