@@ -9,8 +9,6 @@ configure your displayed timespan. Just click the Clock Icon. See in
 the screenshot below:
 
 .. image:: media/image27.png
-   :width: 6.28617in
-   :height: 1.93213in
 
 
 Question: How can I create my own dashboard and widgets?
@@ -35,12 +33,8 @@ displayed data sets by clicking the names right next to the graph. You
 can de-select the data set by clicking it again.
 
 .. image:: media/image28.png
-   :width: 6.179in
-   :height: 1.35878in
 
 .. image:: media/image29.png
-   :width: 6.36617in
-   :height: 1.37324in
 
 
 Question: Can I use the Dashboard when data is updated?
@@ -58,8 +52,6 @@ Data. You can then download the csv file. Additionally, data can be
 received via API, please check chapter 4 API
 
 .. image:: media/image30.png
-   :width: 2.96667in
-   :height: 2.625in
 
 Question: Where do I reset my password?
 ---------------------------------------
@@ -119,8 +111,6 @@ of each panel. Please note that editing a dashboard or panel is only
 available for Editor or Admin Users.
 
 .. image:: media/image31.png
-   :width: 5.85417in
-   :height: 2.16752in
 
 Question: How do you handle daylight savings time changeover?
 -------------------------------------------------------------
@@ -135,12 +125,8 @@ Below you will find the runtime of a unique machine, which was running
 24/7. You can clearly see the drop on a S/W time changeover.
 
 .. image:: media/image32.png
-   :width: 6.62222in
-   :height: 1.95417in
 
 .. image:: media/image33.png
-   :width: 6.62222in
-   :height: 1.94514in
 
 Question: Which version of Enterprise Dashboard do I have?
 ----------------------------------------------------------

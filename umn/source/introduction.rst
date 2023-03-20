@@ -15,9 +15,11 @@ this invitation, you can set the password of your user account.
 Your email and password are case-sensitive. Please check upper and
 lower cases before clicking Log In.
 
-**Note:** Enterprise Dashboard is offered via Direct sales
-only. Please contact either your contractual partner to set up your
-access or contact Request-OpenTelekomCloud@telekom.de.
+.. note:
+   
+   Enterprise Dashboard is offered via Direct sales only. Please
+   contact either your contractual partner to set up your access or
+   contact Request-OpenTelekomCloud@telekom.de.
 
 
 Monitor Spendings on a Payer Level
@@ -72,8 +74,6 @@ dashboard, which aggregates all spendings across several tenants. This
 allows you to manage your business on a bigger scale.
 
 .. image:: media/image03.png
-   :width: 6.19444in
-   :height: 3.01797in
 
 In a scenario like the above, it gets very hard for User A to compare
 data from multiple tenants. Each of his tenants has only access to the
@@ -91,8 +91,6 @@ tenants into a new completely separated organization with new users,
 user groups, and dashboards.
 
 .. image:: media/image04.png
-   :width: 6.69347in
-   :height: 2.32639in
 
 In a scenario like above, where User B is not allowed to access
 certain tenants, you can separate those tenants and give User B access
