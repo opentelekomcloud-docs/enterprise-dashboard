@@ -135,3 +135,9 @@ Enterprise Dashboard will be listed within your invoice, therefore you
 can see Enterprise Dashboard within your consumption data. Enterprise
 Dashboard is billed on the first day of a month.
 
+Question: I can not edit a query anymore. How can i solve this?
+---------------------------------------------------------------
+
+In the current grafana version is a bug which prevents you from
+editing the query. You can select the the datasource and then 
+the edior should appear again.
