@@ -140,4 +140,6 @@ Question: I can not edit a query anymore. How can i solve this?
 
 In the current grafana version is a bug which prevents you from
 editing the query. You can select the the datasource and then 
-the edior should appear again.
+the edior should appear again. (see the screenshot below)
+
+.. image:: media/query-editor-failure.PNG
