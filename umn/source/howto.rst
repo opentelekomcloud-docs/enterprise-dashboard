@@ -2,7 +2,8 @@ How to
 ======
 
 
-.. warning::
+.. note::
+
 There is a bug in grafana (see https://github.com/grafana/grafana/pull/61927)
 which doesn't let you edit the queries anymore. To solve this problem you need
 to go to the datasource select the same datasource again and then the query 
