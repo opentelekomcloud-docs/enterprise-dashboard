@@ -2,8 +2,9 @@
 
 .. warning::
 
-   **Deprecated!** Use the API provided by Grafana.
-   This API allows you to manage Grafana API keys: https://enterprise-dashboard.otc-service.com/api/auth/keys
+   **Attention** 
+   API endpoint v1/grafana/user/orgs is deprecated
+   This API allows you to get the organization of the given user: https://enterprise-dashboard.otc-service.com/api/users/{userid}/orgs
 
 This API allows you to manage Grafana Organization:
 
@@ -16,7 +17,7 @@ Please use your username and password as basic authentificaton for Grafana API e
 Get Organization for user
 =========================
 
-.. rest_method:: GET /v1/grafana/user/orgs
+.. rest_method:: GET /api/users/{userid}/orgs
 
 .. rest_status_code:: success ../http-status.yaml
 
