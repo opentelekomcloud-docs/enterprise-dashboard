@@ -3,7 +3,7 @@
 .. warning::
 
    **Deprecated!** Use the API provided by Grafana.
-   This API allows you to manage Grafana API keys: https://enterprise-dashboard-dev.otc-service.com/api/auth/keys
+   This API allows you to manage Grafana API keys: https://enterprise-dashboard.otc-service.com/api/auth/keys
 
 This API allows you to manage Grafana API keys:
 
