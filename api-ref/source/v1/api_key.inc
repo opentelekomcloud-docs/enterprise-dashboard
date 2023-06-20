@@ -2,7 +2,7 @@
 
 .. warning::
 
-   **Deprecated!** 
+   **Attention** 
    API endpoint /v1/Grafana/keys is deprecated
    Use the API provided by Grafana. This API allows you to manage Grafana API keys: https://enterprise-dashboard.otc-service.com/api/auth/keys
 
