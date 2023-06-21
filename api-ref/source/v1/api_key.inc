@@ -4,7 +4,11 @@
 
    **Attention** 
    API endpoint /v1/Grafana/keys is deprecated
-   Use the API provided by Grafana. This API allows you to manage Grafana API keys: https://enterprise-dashboard.otc-service.com/api/auth/keys
+   Use the API provided by Grafana.
+   This API allows you to manage Grafana API keys: https://enterprise-dashboard-dev.otc-service.com/api/auth/keys
+   Documentation: 
+   https://grafana.com/docs/grafana/latest/administration/api-keys/
+
 
 This API allows you to manage Grafana API keys:
 
@@ -17,7 +21,7 @@ Please use your username and password as basic authentificaton for Grafana API e
 List Keys
 =========
 
-.. rest_method:: GET /api/auth/keys
+.. rest_method:: GET /v1/Grafana/keys
 
 .. rest_status_code:: success ../http-status.yaml
 
