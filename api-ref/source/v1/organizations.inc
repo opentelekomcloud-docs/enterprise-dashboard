@@ -3,7 +3,8 @@
 .. warning::
 
    **Attention** 
-   API endpoint v1/grafana/user/orgs is deprecated
+   API endpoint v1/grafana/user/orgs is deprecated.
+
    Use the API provided by Grafana.
 
 This API allows you to manage Grafana Organization:
