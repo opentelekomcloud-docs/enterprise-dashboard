@@ -3,7 +3,7 @@
 .. warning::
 
    **Attention** 
-   API endpoint v1/grafana/user/orgs is deprecated.
+   API endpoint v1/grafana/user/orgs is deprecated and will be taken offline on 31.07.2023.
 
    Use the API provided by Grafana.
 
