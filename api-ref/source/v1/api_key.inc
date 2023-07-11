@@ -1,5 +1,17 @@
 .. -*- rst -*-
 
+.. warning::
+
+   **Attention** 
+   API endpoint /v1/Grafana/keys is deprecated and will be taken offline on 31.07.2023.
+   
+   Use the API provided by Grafana.
+   This API allows you to manage Grafana API keys: https://enterprise-dashboard-dev.otc-service.com/api/auth/keys
+   
+   Documentation: 
+   https://grafana.com/docs/grafana/latest/administration/api-keys/
+
+
 This API allows you to manage Grafana API keys:
 
 - List keys

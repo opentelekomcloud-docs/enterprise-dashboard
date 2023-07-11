@@ -185,3 +185,6 @@ Change history
 | 1.38    | Jan 11,  | Add `capacity EIP                               |
 |         | 23       | table <#business.dim_ol_capacity_eip>`__        |
 +---------+----------+-------------------------------------------------+
+| 1.39    | Jun 12,  | Add information for query editor bug            |
+|         | 23       | 						       |
++---------+----------+-------------------------------------------------+
