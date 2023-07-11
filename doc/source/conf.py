@@ -18,8 +18,8 @@ import os
 import sys
 
 extensions = [
-    'otc_api_ref',
     'otcdocstheme',
+    'otc_sphinx_directives'
 ]
 
 otcdocs_auto_name = False
@@ -30,12 +30,12 @@ otcdocs_repo_name = 'opentelekomcloud-docs/enterprise-dashboard'
 # Those variables are required for edit/bug links
 
 # Those variables are needed for indexing into OpenSearch
-otcdocs_doc_environment = 'public'
-otcdocs_doc_link = '/enterprise-dashboard/api-ref/'
-otcdocs_doc_title = 'API Reference'
-otcdocs_doc_type = 'api-ref'
-otcdocs_service_category = 'other'
-otcdocs_service_title = 'Enterprise Dashboard'
+otcdocs_doc_environment = ''
+otcdocs_doc_link = ''
+otcdocs_doc_title = ''
+otcdocs_doc_type = ''
+otcdocs_service_category = ''
+otcdocs_service_title = ''
 otcdocs_service_type = 'ed'
 otcdocs_search_environment = 'hc_de'
 otcdocs_search_url = "https://opensearch.eco.tsi-dev.otc-service.com/"
@@ -93,7 +93,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 
-html_title = "Enterprise Dashboard - API Reference"
+html_title = "Enterprise Dashboard - Service Based View"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
