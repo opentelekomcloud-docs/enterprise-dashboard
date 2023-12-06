@@ -430,39 +430,6 @@ query itself will be resolved much quicker due to smaller datasets.
 |                       |                      | always true.         |
 +-----------------------+----------------------+----------------------+
 
-Business. dim_ol_project_names
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This table gives you a list of all project_ids and project_names of
-your organization.
-
-+----------------------+----------------------+-----------------------+
-| Field name           | Data type            | Description           |
-+======================+======================+=======================+
-| name                 | varchar              | This field displays   |
-|                      |                      | the name of your      |
-|                      |                      | project. It’s         |
-|                      |                      | possible to add or    |
-|                      |                      | edit projects within  |
-|                      |                      | IAM.                  |
-+----------------------+----------------------+-----------------------+
-| id                   | varchar              | This field displays   |
-|                      |                      | the project_id and    |
-|                      |                      | can be used as a link |
-|                      |                      | between this table    |
-|                      |                      | and business.sap      |
-+----------------------+----------------------+-----------------------+
-| description          | varchar              | This field displays   |
-|                      |                      | the description of    |
-|                      |                      | each project. It’s    |
-|                      |                      | possible to add a     |
-|                      |                      | description to a      |
-|                      |                      | project within IAM.   |
-+----------------------+----------------------+-----------------------+
-
-Object Storage is displayed as “MOS”. Object Storage is a global
-service and has a unique ID, which can not be found within IAM. This
-project_id has the project_name “MOS”.
 
 Business.consumption_types
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
