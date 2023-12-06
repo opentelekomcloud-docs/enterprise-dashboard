@@ -159,7 +159,7 @@ Limitations):
 +---------------------------+----------------------+----------------------+
 | contract_name             | varchar              | This field displays  |
 |                           |                      | the name of your     |
-|                           |                      | tenant/company. This |
+|                           |                      | /company. This |
 |                           |                      | name can be          |
 |                           |                      | additionally         |
 |                           |                      | configured within    |
@@ -189,7 +189,7 @@ Limitations):
 |                           |                      | calculate it with    |
 |                           |                      | FTE data             |
 +---------------------------+----------------------+----------------------+
-| fte_tenant_contract       | varchar              | original column not  |
+| fte__contract       | varchar              | original column not  |
 |                           |                      | existing, we         |
 |                           |                      | calculate it with    |
 |                           |                      | FTE data             |
@@ -227,7 +227,7 @@ Business.agp
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
 | contract              | numeric              | This field displays  |
-|                       |                      | your tenant id,      |
+|                       |                      | your  id,      |
 |                       |                      | which is the same as |
 |                       |                      | your contract id     |
 +-----------------------+----------------------+----------------------+
@@ -341,7 +341,7 @@ needs to query to fill these variables.
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
 | contract              | numeric              | This field displays  |
-|                       |                      | your tenant id,      |
+|                       |                      | your  id,      |
 |                       |                      | which is the same as |
 |                       |                      | your contract id     |
 +-----------------------+----------------------+----------------------+
@@ -384,7 +384,7 @@ This table gives you a list of tenants' ids (contracts) for your
 payer/reseller account ID. This table is used in Payer/Reseller
 dashboards to access dashboards fast. The initial load is slow
 depending on the amount of data it needs to query to fill this
-variable. Searching for all distinct tenant IDs in
+variable. Searching for all distinct contract IDs in
 business.consumption has the same result as Business.contract, but the
 query itself will be resolved much quicker due to smaller datasets.
 
