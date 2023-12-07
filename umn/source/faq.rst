@@ -135,3 +135,11 @@ Enterprise Dashboard will be listed within your invoice, therefore you
 can see Enterprise Dashboard within your consumption data. Enterprise
 Dashboard is billed on the first day of a month.
 
+Question: The query editor is not displayed anymore and i can't edit it anymore. How can i solve this?
+------------------------------------------------------------------------------------------------------
+
+Unfortunately, this is a known bug in the current Grafana version.
+To solve this issue, you have to select the datasource with the prefix
+"Datasource-Contract" or "Datasource-BusinessPartner" as illustrated below.
+
+.. image:: media/query-editor-failure.PNG

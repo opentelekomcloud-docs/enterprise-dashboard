@@ -18,7 +18,7 @@ import os
 import sys
 
 extensions = [
-    'otcdocstheme'
+    'otcdocstheme',
 ]
 
 otcdocs_auto_name = False
@@ -27,6 +27,17 @@ otcdocs_auto_version = False
 project = 'Enterprise Dashboard'
 otcdocs_repo_name = 'opentelekomcloud-docs/enterprise-dashboard'
 # Those variables are required for edit/bug links
+
+# Those variables are needed for indexing into OpenSearch
+otcdocs_doc_environment = 'public'
+otcdocs_doc_link = '/enterprise-dashboard/umn/'
+otcdocs_doc_title = 'User Guide'
+otcdocs_doc_type = 'umn'
+otcdocs_service_category = 'other'
+otcdocs_service_title = 'Enterprise Dashboard'
+otcdocs_service_type = 'ed'
+otcdocs_search_environment = 'hc_de'
+otcdocs_search_url = "https://opensearch.eco.tsi-dev.otc-service.com/"
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -88,6 +99,9 @@ html_title = "Enterprise Dashboard - User Guide"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Do not include sources into the rendered results
+html_copy_source = False
 
 # -- Options for PDF output --------------------------------------------------
 latex_documents = []

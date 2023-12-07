@@ -20,116 +20,20 @@ Limitations):
 +---------------------------+----------------------+----------------------+
 | Field name                | Data type            | Description          |
 +===========================+======================+======================+
-| contract                  | Int8                 | This field displays  |
-|                           |                      | your tenant id,      |
-|                           |                      | which is the same as |
-|                           |                      | your contract id     |
-+---------------------------+----------------------+----------------------+
-| business_partner_id       | Int8                 | This field displays  |
-|                           |                      | your business        |
-|                           |                      | partner id           |
-+---------------------------+----------------------+----------------------+
-| organization_name         | varchar              | This field displays  |
-|                           |                      | the name of your     |
-|                           |                      | company              |
-+---------------------------+----------------------+----------------------+
-| regulator_id              | Int8                 | This field displays  |
-|                           |                      | the payer id         |
-+---------------------------+----------------------+----------------------+
-| regulator_name            | varchar              | This field displays  |
-|                           |                      | the name of your     |
-|                           |                      | payer                |
-+---------------------------+----------------------+----------------------+
-| fte_reseller_id           | Int4                 | This field displays  |
-|                           |                      | your reseller id.    |
-|                           |                      | The reseller id is   |
-|                           |                      | used in certain      |
-|                           |                      | organization models, |
-|                           |                      | you will not need    |
-|                           |                      | this in most cases   |
-+---------------------------+----------------------+----------------------+
-| agp_id                    | Int8                 | This field displays  |
-|                           |                      | is your overall      |
-|                           |                      | business partner id  |
-+---------------------------+----------------------+----------------------+
-| agp_name                  | varchar              | This field displays  |
-|                           |                      | the name of your     |
-|                           |                      | overall business     |
-|                           |                      | partner              |
-+---------------------------+----------------------+----------------------+
-| quantity_unit             | varchar              | This field displays  |
-|                           |                      | the unit for the     |
-|                           |                      | billing items. For   |
-|                           |                      | example hours for    |
-|                           |                      | virtual machines or  |
-|                           |                      | GB for volumes       |
-+---------------------------+----------------------+----------------------+
-| consumption_date          | timestamp            | This field displays  |
-|                           |                      | when the billing     |
-|                           |                      | item was created,    |
-|                           |                      | therefor when you    |
+| consumption_date          | timestamp            | Date when the        |
+|                           |                      | billing item was     |
+|                           |                      | created / when you   |
 |                           |                      | consumed the service |
 +---------------------------+----------------------+----------------------+
-| unit_price                | Float8               | This field displays  |
-|                           |                      | the price per        |
-|                           |                      | quantity             |
+| contract                  | Int8                 | Your contract id     |
 +---------------------------+----------------------+----------------------+
-| quantity                  | Float8               | This field displays  |
-|                           |                      | the quantity of the  |
-|                           |                      | data set. For        |
-|                           |                      | example, in          |
-|                           |                      | combination with the |
-|                           |                      | unit field, it would |
-|                           |                      | be “10 GB”           |
-+---------------------------+----------------------+----------------------+
-| amount                    | Float8               | This field displays  |
-|                           |                      | the actual costs in  |
-|                           |                      | Euro, same as        |
-|                           |                      | Price*Quantity.      |
-|                           |                      | **Including**        |
-|                           |                      | discounts and        |
-|                           |                      | vouchers             |
-+---------------------------+----------------------+----------------------+
-| amount_excluding_discount | Float8               | This field displays  |
-|                           |                      | the actual costs in  |
-|                           |                      | Euro, same as        |
-|                           |                      | Price*Quantity.      |
-|                           |                      | **Without**          |
-|                           |                      | discounts and        |
-|                           |                      | vouchers             |
-+---------------------------+----------------------+----------------------+
-| product                   | varchar              | This field displays  |
-|                           |                      | the produt_id used   |
-|                           |                      | in the T-Systems     |
+| product                   | varchar              | The product used in  | 
+|                           |                      | the T-Systems        |
 |                           |                      | billing system       |
+|                           |                      | (e.g. OTC_VPC_UP)    |
 +---------------------------+----------------------+----------------------+
-| product_description       | varchar              | This field displays  |
-|                           |                      | the name of the      |
-|                           |                      | product              |
-+---------------------------+----------------------+----------------------+
-| project_id                | varchar              | This field displays  |
-|                           |                      | the project id,      |
-|                           |                      | where the service is |
-|                           |                      | consumed             |
-+---------------------------+----------------------+----------------------+
-| project_name              | varchar              | This field displays  |
-|                           |                      | the project name,    |
-|                           |                      | where the service is |
-|                           |                      | consumed             |
-+---------------------------+----------------------+----------------------+
-| resource_id               | varchar              | This field displays  |
-|                           |                      | the resource id of   |
-|                           |                      | the service          |
-+---------------------------+----------------------+----------------------+
-| billing_status            | Int8                 | This field displays  |
-|                           |                      | if the data set is   |
-|                           |                      | invoiced or not. 0   |
-|                           |                      | means not invoiced,  |
-|                           |                      | 10 means invoiced    |
-+---------------------------+----------------------+----------------------+
-| consumption_type          | varchar              | This field displays  |
-|                           |                      | the type of dataset. |
-|                           |                      | This can be:         |
+| consumption_type          | varchar              | The type of dataset  |
+|                           |                      | which can be:        |
 |                           |                      |                      |
 |                           |                      | Cost types:          |
 |                           |                      |                      |
@@ -156,33 +60,95 @@ Limitations):
 |                           |                      |                      |
 |                           |                      | -  R400 enterprise   |
 |                           |                      |    discount          |
+|                           |                      |                      |
 +---------------------------+----------------------+----------------------+
-| contract_name             | varchar              | This field displays  |
-|                           |                      | the name of your     |
-|                           |                      | tenant/company. This |
-|                           |                      | name can be          |
-|                           |                      | additionally         |
-|                           |                      | configured within    |
-|                           |                      | FTE. Please get in   |
-|                           |                      | contact with the     |
-|                           |                      | dashboard squad for  |
-|                           |                      | this.                |
+| billing_status            | Int8                 | the billing status   |
+|                           |                      | which is 10 when     |
+|                           |                      | invoiced and 0 when  |
+|                           |                      | not invoiced         |
++---------------------------+----------------------+----------------------+
+| business_partner_id       | Int8                 | Your business        |
+|                           |                      | partner id           |
++---------------------------+----------------------+----------------------+
+| business_partner_name     | varchar              | The name of your     |
+|                           |                      | organisation /       |
+|                           |                      | business partner     |
++---------------------------+----------------------+----------------------+
+| quantity_unit             | varchar              | The unit for the     |
+|                           |                      | billing items (e.g.  |
+|                           |                      | 'H' for running      |
+|                           |                      | of virtual machines  |
+|                           |                      | or 'GB' for storage  |
+|                           |                      | consumed by volumes) |
++---------------------------+----------------------+----------------------+
+| unit_price                | Float8               | The price per        |
+|                           |                      | quantity             |
++---------------------------+----------------------+----------------------+
+| project_id                | varchar              | The id of the        |
+|                           |                      | project where the    |
+|                           |                      | service is consumed  |
++---------------------------+----------------------+----------------------+
+| resource_id               | varchar              | The resource id of   |
+|                           |                      | the service          |
 +---------------------------+----------------------+----------------------+
 | hash32                    | varchar              | Unique identifier    |
 |                           |                      | for a row            |
 +---------------------------+----------------------+----------------------+
-| region                    | varchar              | Indicates the name   |
-|                           |                      | of the region to     |
-|                           |                      | which a resource     |
-|                           |                      | belongs, e.g. eu-de  |
+| region                    | varchar              | The name of the      |
+|                           |                      | region to which a    |
+|                           |                      | resource belongs     |
+|                           |                      | (e.g. 'eu-de')       |
 +---------------------------+----------------------+----------------------+
-| hash_key                  | varchar              | Key for internal     |
-|                           |                      | purposes             |
+| hash_key                  | varchar              | A Hash-Key for       |
+|                           |                      | internal purposes    |
 +---------------------------+----------------------+----------------------+
-| sales_chanel              | varchar              | original column not  |
-|                           |                      | existing, we         |
-|                           |                      | calculate it with    |
-|                           |                      | FTE data             |
+| fte_reseller_id           | Int4                 | The reseller id is   |
+|                           |                      | used in certain      |
+|                           |                      | organisation models, |
+|                           |                      | you won't need       |
+|                           |                      | this in most cases   |
++---------------------------+----------------------+----------------------+
+| product_description       | varchar              | The name of the      |
+|                           |                      | product              |
++---------------------------+----------------------+----------------------+
+| project_name              | varchar              | The project name     |
+|                           |                      | where the service is |
+|                           |                      | consumed             |
++---------------------------+----------------------+----------------------+
+| amount_excluding_discount | Float8               | The costs in EUR     |
+|                           |                      | which equal to       |
+|                           |                      | Price*Quantity.      |
+|                           |                      | **Without**          |
+|                           |                      | discounts and        |
+|                           |                      | vouchers             |
++---------------------------+----------------------+----------------------+
+| amount                    | Float8               | The actual costs in  | 
+|                           |                      | EUR which equal to   |
+|                           |                      | Price*Quantity.      |
+|                           |                      | **Including**        |
+|                           |                      | discounts and        |
+|                           |                      | vouchers             |
++---------------------------+----------------------+----------------------+
+| quantity                  | Float8               | The quantity of the  |
+|                           |                      | item which has to be |
+|                           |                      | interpreted in       |
+|                           |                      | combination with the |
+|                           |                      | unit field,          |
+|                           |                      | e.g. "10.GB"         |
++---------------------------+----------------------+----------------------+
+| contract_name             | varchar              | The name of your     |
+|                           |                      | contract or          |
+|                           |                      | organisation. In     |
+|                           |                      | order to edit this   |
+|                           |                      | name please get in   |
+|                           |                      | touch with the       |
+|                           |                      | dashboard squad,     |
+|                           |                      | contact with the     |
+|                           |                      | dashboard squad for  |
+|                           |                      | this.                |
++---------------------------+----------------------+----------------------+
+| sales_chanel              | varchar              | The Sales Channel of |
+|                           |                      | the item             |
 +---------------------------+----------------------+----------------------+
 | fte_ea_name               | varchar              | original column not  |
 |                           |                      | existing, we         |
@@ -195,61 +161,24 @@ Limitations):
 |                           |                      | FTE data             |
 +---------------------------+----------------------+----------------------+
 
+
+
 Business.business_partner
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| business_partner_id   | numeric              | This field displays  |
-|                       |                      | your business        |
+| business_partner_id   | numeric              | Your business-       |
+|                       |                      | partner-id           |
 |                       |                      | partner id           |
 +-----------------------+----------------------+----------------------+
-| business_partner_name | varchar              | This field displays  |
-|                       |                      | your business        |
-|                       |                      | partner name         |
-+-----------------------+----------------------+----------------------+
-| valid_from            | timestamp            | This field displays  |
-|                       |                      | the date from which  |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
-+-----------------------+----------------------+----------------------+
-| valid_to              | timestamp            | This field displays  |
-|                       |                      | the date to which    |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
+| business_partner_name | varchar              | The name of your     |
+|                       |                      | organisation /       |
+|                       |                      | business partner     |
 +-----------------------+----------------------+----------------------+
 
-Business.agp
-~~~~~~~~~~~~
 
-+-----------------------+----------------------+----------------------+
-| Field name            | Data type            | Description          |
-+=======================+======================+======================+
-| contract              | numeric              | This field displays  |
-|                       |                      | your tenant id,      |
-|                       |                      | which is the same as |
-|                       |                      | your contract id     |
-+-----------------------+----------------------+----------------------+
-| agp_id                | varchar              | This field displays  |
-|                       |                      | is your overall      |
-|                       |                      | business partner id  |
-+-----------------------+----------------------+----------------------+
-| agp_name              | varchar              | This field displays  |
-|                       |                      | the name of your     |
-|                       |                      | overall business     |
-|                       |                      | partner              |
-+-----------------------+----------------------+----------------------+
-| valid_from            | timestamp            | This field displays  |
-|                       |                      | the date from which  |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
-+-----------------------+----------------------+----------------------+
-| valid_to              | timestamp            | This field displays  |
-|                       |                      | the date to which    |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
-+-----------------------+----------------------+----------------------+
 
 Business.product
 ~~~~~~~~~~~~~~~~
@@ -257,18 +186,16 @@ Business.product
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| product               | varchar              | This field displays  |
-|                       |                      | the produt_id used   |
-|                       |                      | in the T-Systems     |
-|                       |                      | billing system       |
+| product               | varchar              | The ID of the        |
+|                       |                      | product used in the  |
+|                       |                      | T-Systems billing    |
+|                       |                      | system               |
 +-----------------------+----------------------+----------------------+
-| product_description   | varchar              | This field displays  |
-|                       |                      | the name of your     |
-|                       |                      | product              |
+| product_description   | varchar              | The description of   |
+|                       |                      | the product          |
 +-----------------------+----------------------+----------------------+
-| product_category      | String               | This field displays  |
-|                       |                      | the product category |
-|                       |                      | of service, used in  |
+| product_category      | String               | The category of the  |
+|                       |                      | the product, used in |
 |                       |                      | the T-Systems        |
 |                       |                      | billing system.      |
 |                       |                      |                      |
@@ -276,58 +203,44 @@ Business.product
 |                       |                      | following            |
 |                       |                      | categories:          |
 |                       |                      |                      |
+|                       |                      | -  AI                |
+|                       |                      |                      |
+|                       |                      | -  Analysis          |
+|                       |                      |                      |
+|                       |                      | -  Application       |
+|                       |                      |                      |
+|                       |                      | -  Base              |
+|                       |                      |                      |
 |                       |                      | -  Compute           |
 |                       |                      |                      |
-|                       |                      | -  Storage           |
+|                       |                      | -  Container         |
 |                       |                      |                      |
-|                       |                      | -  Network           |
+|                       |                      | -  Database          |
+|                       |                      |                      |
+|                       |                      | -  Enterprise        |
+|                       |                      |    Application       |
+|                       |                      |                      |
+|                       |                      | -  Licenses          |
 |                       |                      |                      |
 |                       |                      | -  Management        |
 |                       |                      |                      |
-|                       |                      | -  SaaS              |
+|                       |                      | -  Network           |
 |                       |                      |                      |
 |                       |                      | -  PaaS              |
 |                       |                      |                      |
-|                       |                      | Service              |
+|                       |                      | -  SaaS              |
+|                       |                      |                      |
+|                       |                      | -  Security          |
+|                       |                      |                      |
+|                       |                      | -  Service           |
+|                       |                      |                      |
+|                       |                      | -  Storage           |
+|                       |                      |                      |
 +-----------------------+----------------------+----------------------+
-| producty_family       | String               | This field displays  |
-|                       |                      | the product family   |
+| producty_family       | String               | The product family   |
 |                       |                      | of a service         |
 +-----------------------+----------------------+----------------------+
-| valid_from            | timestamp            | This field displays  |
-|                       |                      | the date from which  |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
-+-----------------------+----------------------+----------------------+
-| valid_to              | timestamp            | This field displays  |
-|                       |                      | the date to which    |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
-+-----------------------+----------------------+----------------------+
 
-Business.regulator
-~~~~~~~~~~~~~~~~~~
-
-+-----------------------+----------------------+----------------------+
-| Field name            | Data type            | Description          |
-+=======================+======================+======================+
-| regulator_id          | numeric              | This field displays  |
-|                       |                      | the payer id         |
-+-----------------------+----------------------+----------------------+
-| regulator_name        | varchar              | This field displays  |
-|                       |                      | the name of your     |
-|                       |                      | payer                |
-+-----------------------+----------------------+----------------------+
-| valid_from            | timestamp            | This field displays  |
-|                       |                      | the date from which  |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
-+-----------------------+----------------------+----------------------+
-| valid_to              | timestamp            | This field displays  |
-|                       |                      | the date to which    |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
-+-----------------------+----------------------+----------------------+
 
 Business.tag
 ~~~~~~~~~~~~
@@ -340,129 +253,68 @@ needs to query to fill these variables.
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| contract              | numeric              | This field displays  |
-|                       |                      | your tenant id,      |
-|                       |                      | which is the same as |
-|                       |                      | your contract id     |
+| contract              | Int8                 | Your contract id     |
 +-----------------------+----------------------+----------------------+
-| reseller_id           | numeric              | This field displays  |
-|                       |                      | your reseller id.    |
-|                       |                      | The reseller id is   |
+| reseller_id           | Int8                 | The reseller id is   |
 |                       |                      | used in certain      |
-|                       |                      | organization models, |
-|                       |                      | you will not need    |
+|                       |                      | organisation models, |
+|                       |                      | you won't need       |
 |                       |                      | this in most cases   |
 +-----------------------+----------------------+----------------------+
 | hash32                | varchar              | Key for internal     |
 |                       |                      | purposes             |
 +-----------------------+----------------------+----------------------+
-| tag_key               | varchar              | This field displays  |
-|                       |                      | the tag keys which   |
+| tag_key               | varchar              | The tag keys which   |
 |                       |                      | are used in your     |
 |                       |                      | infrastructure       |
 +-----------------------+----------------------+----------------------+
-| tag_value             | varchar              | This field displays  |
-|                       |                      | the tag values which |
+| tag_value             | varchar              | The tag values which |
 |                       |                      | are used in your     |
 |                       |                      | infrastructure       |
 +-----------------------+----------------------+----------------------+
-| valid_from            | timestamp            | This field displays  |
-|                       |                      | the date from which  |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
-+-----------------------+----------------------+----------------------+
-| valid_to              | timestamp            | This field displays  |
-|                       |                      | the date to which    |
-|                       |                      | the data set is      |
-|                       |                      | valid                |
-+-----------------------+----------------------+----------------------+
+
 
 Business.contract
 ~~~~~~~~~~~~~~~~~
 
-This table gives you a list of tenants' ids (contracts) for your
+This table gives you a list of contract-IDs for your
 payer/reseller account ID. This table is used in Payer/Reseller
-dashboards to access dashboards fast. The initial load is slow
-depending on the amount of data it needs to query to fill this
-variable. Searching for all distinct tenant IDs in
+dashboards in order to access dashboards with shower query execution time.
+The initial load is slow depending on the amount of data it needs to query 
+to fill this variable. Searching for all distinct contract IDs in
 business.consumption has the same result as Business.contract, but the
 query itself will be resolved much quicker due to smaller datasets.
 
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| regulator             | Int8                 | This field displays  |
-|                       |                      | the payer id.        |
+| business_partner_id   | Int8                 | Your business        |
+|                       |                      | partner id           |
 +-----------------------+----------------------+----------------------+
-| reseller_id           | Int8                 | This field displays  |
-|                       |                      | your reseller id.    |
-|                       |                      | The reseller id is   |
-|                       |                      | in most cases the    |
-|                       |                      | same as your payer   |
-|                       |                      | id, presented by the |
-|                       |                      | field                |
-|                       |                      | “regulierer_id” in   |
-|                       |                      | business.sap tables. |
+| business_partner_name | varchar              | The name of your     |
+|                       |                      | organisation /       |
+|                       |                      | business partner     |
 +-----------------------+----------------------+----------------------+
-| contract              | Int8                 | This field displays  |
-|                       |                      | your tenant id,      |
-|                       |                      | which is the same as |
-|                       |                      | your contract id.    |
+| reseller_id           | Int4                 | The reseller id is   |
+|                       |                      | used in certain      |
+|                       |                      | organisation models, |
+|                       |                      | you won't need       |
+|                       |                      | this in most cases   |
 +-----------------------+----------------------+----------------------+
-| contract_name         | Varchar              | This field displays  |
-|                       |                      | the name of your     |
-|                       |                      | tenant/company. This |
-|                       |                      | name can be          |
-|                       |                      | additionally         |
-|                       |                      | configured within    |
-|                       |                      | FTE. Please get in   |
+| contract              | Int8                 | Your contract id     |
++-----------------------+----------------------+----------------------+
+| contract_name         | varchar              | The name of your     |
+|                       |                      | contract or          |
+|                       |                      | organisation. In     |
+|                       |                      | order to edit this   |
+|                       |                      | name please get in   |
+|                       |                      | touch with the       |
+|                       |                      | dashboard squad,     |
 |                       |                      | contact with the     |
 |                       |                      | dashboard squad for  |
 |                       |                      | this.                |
 +-----------------------+----------------------+----------------------+
-| charging_type         | Int8                 |                      |
-+-----------------------+----------------------+----------------------+
-| provisioning_status   | Boolean              | This field displays  |
-|                       |                      | the provisioning     |
-|                       |                      | status of your       |
-|                       |                      | tenant in Enterprise |
-|                       |                      | Dashboard. Should be |
-|                       |                      | always true.         |
-+-----------------------+----------------------+----------------------+
 
-Business. dim_ol_project_names
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This table gives you a list of all project_ids and project_names of
-your organization.
-
-+----------------------+----------------------+-----------------------+
-| Field name           | Data type            | Description           |
-+======================+======================+=======================+
-| name                 | varchar              | This field displays   |
-|                      |                      | the name of your      |
-|                      |                      | project. It’s         |
-|                      |                      | possible to add or    |
-|                      |                      | edit projects within  |
-|                      |                      | IAM.                  |
-+----------------------+----------------------+-----------------------+
-| id                   | varchar              | This field displays   |
-|                      |                      | the project_id and    |
-|                      |                      | can be used as a link |
-|                      |                      | between this table    |
-|                      |                      | and business.sap      |
-+----------------------+----------------------+-----------------------+
-| description          | varchar              | This field displays   |
-|                      |                      | the description of    |
-|                      |                      | each project. It’s    |
-|                      |                      | possible to add a     |
-|                      |                      | description to a      |
-|                      |                      | project within IAM.   |
-+----------------------+----------------------+-----------------------+
-
-Object Storage is displayed as “MOS”. Object Storage is a global
-service and has a unique ID, which can not be found within IAM. This
-project_id has the project_name “MOS”.
 
 Business.consumption_types
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -722,7 +574,7 @@ day. The “timestamp” attribute shows when the data was collected.
 |                         |                      | data set was created  |
 +-------------------------+----------------------+-----------------------+
 
-Business. dim_ol_capacity_evs_capacity
+Business.dim_ol_capacity_evs_capacity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This table is only available if you use Enterprise Dashboard Extra

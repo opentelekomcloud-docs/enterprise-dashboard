@@ -1,5 +1,15 @@
 .. -*- rst -*-
 
+.. warning::
+
+   **Attention** 
+   API endpoint v1/grafana/user/orgs is deprecated and will be taken offline on 31.07.2023.
+
+   Use the API provided by Grafana.
+
+   Documentation:
+   https://grafana.com/docs/grafana/latest/developers/http_api/user/#get-organizations-for-user
+
 This API allows you to manage Grafana Organization:
 
 - Get organizations for user
