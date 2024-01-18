@@ -28,14 +28,14 @@ Access Dashboards
 -----------------
 
 Make sure the right organization is selected. You need to select the
-global dashboard to have an overview of multiple tenants or a
-tenant-specific dashboard if you want to have the data of one specific
-tenant.
+global dashboard to have an overview of multiple contracts or a
+contract-specific dashboard if you want to have the data of one specific
+contract.
 
 - The name of a payer organization follows the pattern "00000XXXX <org
   name>".
 
-- The name of a tenant organization follows the pattern "10000XXXXX".
+- The name of a contract organization follows the pattern "10000XXXXX".
 
 You can access the dashboards of your organization by clicking Manage
 within the “Square”-Symbol in the navigation bar on the left side of
@@ -55,11 +55,9 @@ permissions are explained.
 Provided by Open Telekom Cloud 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are two default financial dashboards within each
-organization. Financial dashboards provided by Open Telekom Cloud are
-located in the folder “Provided by Open Telekom Cloud” and are tagged
-individually for a quick overview on which aspect a dashboard is
-focused on.
+There are two default consumption dashboards within each
+organization. Dashboards provided by Open Telekom Cloud are
+located in the folder “Provided by Open Telekom Cloud”.
 
 .. image:: media/image09.png
 
@@ -80,7 +78,7 @@ categories or projects further below.
 Consumption view with Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Dashboard “Tenant consumption view with Tags” displays your
+The Dashboard “Consumption view with Tags” displays your
 invoice data with a focus on those resources, which have been
 tagged. `Tag Management Service <https://docs.otc.t-systems.com/tag-management-service/umn/>`__
 is an Openstack Service that allows the user to add up to 20 additional
@@ -108,19 +106,19 @@ be found further below in the dashboard.
 
 .. image:: media/image14.png
 
-Global consumption view
+Business Partner consumption view
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Global Dashboards are available for users of Enterprise Dashboard
+Business Partner Dashboards are available for users of Enterprise Dashboard
 Large.
 
-The dashboard “Global consumption view” is built up in the same way as
-the dashboard “Tenant consumption view” described in chapter 3.2.3
+The dashboard “Consumption view” for business partner is built up in the same way as
+the dashboard “Consumption view” described in chapter 3.2.3
 before. However, there is one exception. You can select either a
-single, multiple, or all tenants with a selection box in the first row
-of the dashboard. If you select just one tenant you will have the same
-view as the tenant organization with its tenant consumption view. If
-you select more than 1 tenant, each widget will include the costs of
+single, multiple, or all contracts of your business partner with a selection box in the first row
+of the dashboard. If you select just one contract you will have the same
+view as the contract organization with its consumption view. If
+you select more than 1 contract, each widget will include the costs of
 the selected Tenants. In the following you will see a screenshot of
 the mentioned selection box:
 
@@ -128,10 +126,10 @@ the mentioned selection box:
 
 
 
-Global consumption view with Tags
+Business Partner consumption view with Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Global Dashboards are available for users of Enterprise Dashboard
+Business Partner are available for users of Enterprise Dashboard
 Large.
 
 The dashboard “Global consumption view with tags” is built up in the
