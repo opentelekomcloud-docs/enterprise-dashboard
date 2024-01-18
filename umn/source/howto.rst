@@ -107,7 +107,7 @@ be found further below in the dashboard.
 .. image:: media/image14.png
 
 Business Partner consumption view
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Business Partner Dashboards are available for users of Enterprise Dashboard
 Large.
@@ -127,7 +127,7 @@ the mentioned selection box:
 
 
 Business Partner consumption view with Tags
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Business Partner are available for users of Enterprise Dashboard
 Large.
