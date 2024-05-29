@@ -31,8 +31,10 @@ Response Parameters
 
 N/A
 
-Version V1
+
+V1
 ======
+
 
 .. rest_method:: GET /v1
 
