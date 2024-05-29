@@ -41,7 +41,7 @@ Organizations
 -------------
 .. include:: organizations.inc
 
--------------
+--------
 Versions
--------------
+--------
 .. include:: versions.inc
