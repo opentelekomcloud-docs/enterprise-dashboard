@@ -1,7 +1,7 @@
 .. -*- rst -*-
 
 Versions
-======
+========
 
 .. rest_method:: GET /
 
@@ -33,7 +33,7 @@ N/A
 
 
 V1
-======
+==
 
 
 .. rest_method:: GET /v1
