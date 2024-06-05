@@ -5,7 +5,7 @@ Enterprise Dashboard provides a RESTful API, which gives you access to your cons
 itself.
 
 For instructions about dashboards, user handling, or data structure, please refer to the `User
-manual <https://enterprise-dashboard.obs.eu-de.otc.t-systems.com/OTC%20Enterprise%20Dashboard%20Usermanual.pdf>`__
+manual <https://docs.otc.t-systems.com/enterprise-dashboard/umn/>`__
 
 
 **Current** API version
