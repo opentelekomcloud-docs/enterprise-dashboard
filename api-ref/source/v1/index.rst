@@ -40,3 +40,8 @@ Grafana API Key
 Organizations
 -------------
 .. include:: organizations.inc
+
+--------
+Versions
+--------
+.. include:: versions.inc
