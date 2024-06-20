@@ -112,7 +112,7 @@ tag_value:
   type: string
 tagged:
   description: |
-    This field decides if the tagged resources will be shown in the result.
+    This field decides if the tags on the resources will be shown in the result.
     To filter based on tags by tag_key or tag_value filters.
   in: body
   required: false
