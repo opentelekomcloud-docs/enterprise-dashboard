@@ -86,7 +86,7 @@ product_description:
   type: string
 project_name:
   description: |
-    To filter based on project name like "eu-de"
+    To filter based on project name like "eu-de".
   in: body
   required: false
   type: string
@@ -112,7 +112,8 @@ tag_value:
   type: string
 tagged:
   description: |
-    Displays the resource tags in the result and this field decides if the tagged resources should be filtered or not.
+    This field decides if the tagged resources will be shown in the result.
+    To filter based on tags by tag_key or tag_value filters.
   in: body
   required: false
   type: boolean
