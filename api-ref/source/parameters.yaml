@@ -4,7 +4,7 @@
 ###############################################################################
 # Query fields
 ###############################################################################
-consumption_date:
+consumption_date-query:
   description: |
     Return the data of the selected date.
   in: query
