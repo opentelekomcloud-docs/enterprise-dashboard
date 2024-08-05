@@ -117,4 +117,43 @@ tagged:
   in: body
   required: false
   type: boolean
+show_tag:
+  description: |
+    This field decides if the tags on the resources will be shown in the result.
+    To filter based on tags by tag_key or tag_value filters.
+  in: body
+  required: false
+  type: boolean
+date:
+  description: |
+    To filter based on the date the service was consumed.
+
+    format = YYYY-MM-DD
+  in: body
+  required: false
+  type: string
+hour:
+  description: |
+    Hour of the day (0-23).
+  in: body
+  required: false
+  type: integer
+week:
+  description: |
+    Week number (1-53).
+  in: body
+  required: false
+  type: integer
+month:
+  description: |
+    Month number (1-12).
+  in: body
+  required: false
+  type: integer
+year:
+  description: |
+    Year (2020-2100).
+  in: body
+  required: false
+  type: integer
 
