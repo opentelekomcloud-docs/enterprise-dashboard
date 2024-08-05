@@ -2,75 +2,11 @@
 # Path fields
 ###############################################################################
 ###############################################################################
-# Query fields
-###############################################################################
-consumption_date-query:
-  description: |
-    Return the data of the selected date.
-  in: query
-  required: false
-  type: string
-month:
-  description: |
-    Return the data of the selected month.
-  in: query
-  required: true
-  type: integer
-week:
-  description: |
-    Return the data of the selected week.
-  in: query
-  required: true
-  type: integer
-year:
-  description: |
-    The selected year.
-  in: query
-  required: true
-  type: integer
-
-###############################################################################
 # Body fields
 ###############################################################################
-consumption_date:
-  description: |
-    To filter based on the date the service was consumed.
-
-    format = YYYY-MM-DD
-  in: body
-  required: false
-  type: string
-
 contract:
   description: |
     To filter based on contract.
-  in: body
-  required: false
-  type: integer
-
-key_name:
-  description: |
-    Name of the API key.
-  in: body
-  required: true
-  type: string
-
-limit:
-  description: |
-    Limits the number consumption data to be returned.
-    Only effective if no date filter (consumption_date, day, week, month, year) is used: limit is always applied either it's default or the user specified value.
-
-    default = 10, min = 1, max = 100
-  in: body
-  required: false
-  type: integer
-
-offset:
-  description: |
-    Allows you to fetch next set of consumption data.
-    Only effective if no date filter (consumption_date, day, week, month, year) is used: offset is always applied either it's default or the user specified value.
-
-    default = 0, min = 0
   in: body
   required: false
   type: integer
@@ -82,21 +18,18 @@ product:
   in: body
   required: false
   type: integer
-
 product_description:
   description: |
     To filter based on Product Description.
   in: body
   required: false
   type: string
-
 project_name:
   description: |
     To filter based on project name like "eu-de".
   in: body
   required: false
   type: string
-
 resource_id:
   description: |
     To filter based on the resource id. This field is a unique identifier for all services.
@@ -110,7 +43,6 @@ tag_key:
   in: body
   required: false
   type: string
-
 tag_value:
   description: |
     To filter based on the tag value. Please note that tags are a pair of tag key and tag value. 
@@ -118,11 +50,43 @@ tag_value:
   in: body
   required: false
   type: string
-
-tagged:
+show_tag:
   description: |
     This field decides if the tags on the resources will be shown in the result.
     To filter based on tags by tag_key or tag_value filters.
   in: body
   required: false
   type: boolean
+date:
+  description: |
+    To filter based on the date the service was consumed.
+
+    format = YYYY-MM-DD
+  in: body
+  required: false
+  type: string
+hour:
+  description: |
+    To filter based on Hour of the day (0-23).
+  in: body
+  required: false
+  type: integer
+week:
+  description: |
+    To filter based on Week number (1-53).
+  in: body
+  required: false
+  type: integer
+month:
+  description: |
+    To filter based on Month number (1-12).
+  in: body
+  required: false
+  type: integer
+year:
+  description: |
+    To filter based on Year (2020-2100).
+  in: body
+  required: false
+  type: integer
+
