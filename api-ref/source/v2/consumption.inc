@@ -5,7 +5,7 @@ Show Consumption (Hourly Granularity)
 
 .. rest_method:: GET /v2/hourly/consumption
 
-This API fetches your consumption data. Please create a API Key either in Enterprise Dashboard UI or with the API.
+This API fetches your consumption data. Please create a API Key either in Enterprise Dashboard UI or with the API. If request is sent with same parameters within 1 hr, cached data will be returned. 
 
 .. rest_status_code:: success ../http-status.yaml
 
@@ -55,7 +55,7 @@ Show Consumption (Daily Granularity)
 
 .. rest_method:: GET /v2/daily/consumption
 
-This API fetches your aggregated consumption data. Please create a API Key either in Enterprise Dashboard UI or with the API.
+This API fetches your aggregated consumption data. Please create a API Key either in Enterprise Dashboard UI or with the API. If request is sent with same parameters within 1 hr, cached data will be returned. 
 
 .. rest_status_code:: success ../http-status.yaml
 
