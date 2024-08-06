@@ -22,16 +22,16 @@ Request
 
    - contract: contract
    - date: date
-   - show_tag: show_tag
+   - hour: hour
+   - month: month
    - product: product
    - product_description: product_description
    - project_name: project_name
    - resource_id: resource_id
+   - show_tag: show_tag
    - tag_key: tag_key
    - tag_value: tag_value
-   - hour: hour
    - week: week
-   - month: month
    - year: year
 
 Curl Example
@@ -72,15 +72,15 @@ Request
 
    - contract: contract
    - date: date
-   - show_tag: show_tag
+   - month: month
    - product: product
    - product_description: product_description
    - project_name: project_name
    - resource_id: resource_id
+   - show_tag: show_tag
    - tag_key: tag_key
    - tag_value: tag_value
    - week: week
-   - month: month
    - year: year
 
 Curl Example
