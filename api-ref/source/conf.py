@@ -20,8 +20,7 @@ from git import Repo
 from datetime import datetime
 
 extensions = [
-    'otc_api_ref',
-    'otcdocstheme'
+    'otcdocstheme',
 ]
 
 otcdocs_auto_name = False
