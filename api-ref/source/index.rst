@@ -10,13 +10,11 @@ manual <https://docs.otc.t-systems.com/enterprise-dashboard/umn/>`__
 
 **Current** API versions
 
-  :doc:`Enterprise Dashboard API v1<v1/index>`
   :doc:`Enterprise Dashboard API v2<v2/index>`
 
 
 .. toctree::
    :hidden:
 
-   v1/index
    v2/index
 
