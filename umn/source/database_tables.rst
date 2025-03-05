@@ -150,7 +150,7 @@ Limitations):
 |                           |                      | applied.             |
 +---------------------------+----------------------+----------------------+
 | product                   | varchar              | This field displays  |
-|                           |                      | the produt_id        |
+|                           |                      | the product_id        |
 |                           |                      | In case you need     |
 |                           |                      | more product details |
 |                           |                      | you have to join     |
@@ -223,7 +223,7 @@ Business.product
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| idc                   | varchar              | The ID of the        |
+| id                   | varchar              | The ID of the        |
 |                       |                      | product used in the  |
 |                       |                      | T-Systems billing    |
 |                       |                      | system               |
