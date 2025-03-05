@@ -46,7 +46,7 @@ Response Parameters
 Response Example
 ----------------
 
-.. literalinclude:: examples/consumption-get-response.json
+.. literalinclude:: examples/consumption-get-hourly-response.json
    :language: javascript
 
 
@@ -95,6 +95,6 @@ Response Parameters
 Response Example
 ----------------
 
-.. literalinclude:: examples/consumption-get-response.json
+.. literalinclude:: examples/consumption-get-daily-response.json
    :language: javascript
 

@@ -10,11 +10,22 @@ contract:
   in: body
   required: false
   type: integer
+date:
+  description: |
+    To filter based on the date the service was consumed.
+    format = YYYY-MM-DD
+  in: body
+  required: false
+  type: string
+hour:
+  description: |
+    To filter based on Hour of the day (0-23).
+  in: body
+  required: false
+  type: integer
 product:
   description: |
     To filter based on Product Id.
-
-    min = 1, max = 32
   in: body
   required: false
   type: integer
@@ -36,20 +47,6 @@ resource_id:
   in: body
   required: false
   type: string
-tag_key:
-  description: |
-    To filter based on the tag key attached to a resource. Please note that tags are a pair of tag key and tag value. 
-    Only effective with tagged=true. 
-  in: body
-  required: false
-  type: string
-tag_value:
-  description: |
-    To filter based on the tag value. Please note that tags are a pair of tag key and tag value. 
-    Only effective with tagged=true. 
-  in: body
-  required: false
-  type: string
 show_tag:
   description: |
     This field decides if the tags on the resources will be shown in the result.
@@ -57,20 +54,20 @@ show_tag:
   in: body
   required: false
   type: boolean
-date:
+tag_key:
   description: |
-    To filter based on the date the service was consumed.
-
-    format = YYYY-MM-DD
+    To filter based on the tag key attached to a resource. Please note that tags are a pair of tag key and tag value. 
+    Only effective with tagged=true.
   in: body
   required: false
   type: string
-hour:
+tag_value:
   description: |
-    To filter based on Hour of the day (0-23).
+    To filter based on the tag value. Please note that tags are a pair of tag key and tag value. 
+    Only effective with tagged=true.
   in: body
   required: false
-  type: integer
+  type: string
 week:
   description: |
     To filter based on Week number (1-53).
