@@ -313,7 +313,7 @@ Business.contract
 ~~~~~~~~~~~~~~~~~
 
 This table gives you a list of contract-IDs for your
-payer/reseller account ID. This table is used in Payer/Reseller
+payer account ID. This table is used in Payer
 dashboards in order to access dashboards with shower query execution time.
 The initial load is slow depending on the amount of data it needs to query 
 to fill this variable. Searching for all distinct contract IDs in
@@ -329,12 +329,6 @@ thequery itself will be resolved much quicker due to smaller datasets.
 | business_partner_name | varchar              | The name of your     |
 |                       |                      | organisation /       |
 |                       |                      | business partner     |
-+-----------------------+----------------------+----------------------+
-| reseller_id           | Int4                 | The reseller id is   |
-|                       |                      | used in certain      |
-|                       |                      | organisation models, |
-|                       |                      | you won't need       |
-|                       |                      | this in most cases   |
 +-----------------------+----------------------+----------------------+
 | id                    | Int8                 | Your contract id     |
 +-----------------------+----------------------+----------------------+
@@ -372,48 +366,6 @@ thequery itself will be resolved much quicker due to smaller datasets.
 | time_zone             | varchar              | Time zone            |
 +-----------------------+----------------------+----------------------+
 
-
-Business.consumption_types
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-+-------------------------------+----------------------+-----------------------+
-| Field name                    | Data type            | Description           |
-+===============================+======================+=======================+
-| value_type                    | varchar              | This field displays   |
-|                               |                      | the type of dataset.  |
-|                               |                      | This can be:          |
-|                               |                      |                       |
-|                               |                      | Cost types:           |
-|                               |                      |                       |
-|                               |                      | -  K017 & K018        |
-|                               |                      |    elastic prices     |
-|                               |                      |                       |
-|                               |                      | -  D102 advance       |
-|                               |                      |    payments           |
-|                               |                      |                       |
-|                               |                      | -  D536 monthly       |
-|                               |                      |    payments           |
-|                               |                      |                       |
-|                               |                      | -  D104 allowances    |
-|                               |                      |                       |
-|                               |                      | Discount types:       |
-|                               |                      |                       |
-|                               |                      | -  R100 applied       |
-|                               |                      |    discount           |
-|                               |                      |                       |
-|                               |                      | R400 enterprise       |
-|                               |                      | discount              |
-+-------------------------------+----------------------+-----------------------+
-| consumption_types_description | varchar              | | Description of      |
-|                               |                      |   value type.         |
-|                               |                      | | e.g.                |
-|                               |                      | | value type = K014   |
-|                               |                      |                       |
-|                               |                      | Consump               |
-|                               |                      | tion_type_description |
-|                               |                      | = Usage for PLM Cloud |
-|                               |                      | with price            |
-+-------------------------------+----------------------+-----------------------+
 
 Business.dim_ol_capacity_ecs_compute
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
