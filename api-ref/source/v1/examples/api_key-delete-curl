@@ -1,2 +1,0 @@
-curl -X DELETE 'https://api-enterprise-dashboard.otc-service.com/v1/Grafana/auth/keys/{Key_Id}' \
-    -H 'Authorization: Basic {base64(username:password)}' 

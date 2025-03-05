@@ -1,7 +1,7 @@
 .. -*- rst -*-
 
 Show Consumption (Hourly Granularity)
-================
+=====================================
 
 .. rest_method:: GET /v2/hourly/consumption
 
@@ -51,7 +51,7 @@ Response Example
 
 
 Show Consumption (Daily Granularity)
-================
+====================================
 
 .. rest_method:: GET /v2/daily/consumption
 

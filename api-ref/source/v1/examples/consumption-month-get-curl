@@ -1,3 +1,0 @@
-curl -G 'https://api-enterprise-dashboard.otc-service.com/v1/consumption/month?month=2020-07' \
-    -H 'Authorization: Bearer {API_Key}' 
-
