@@ -23,6 +23,12 @@ hour:
   in: body
   required: false
   type: integer
+month:
+  description: |
+    To filter based on Month number (1-12).
+  in: body
+  required: false
+  type: integer
 product:
   description: |
     To filter based on Product Id.
@@ -71,12 +77,6 @@ tag_value:
 week:
   description: |
     To filter based on Week number (1-53).
-  in: body
-  required: false
-  type: integer
-month:
-  description: |
-    To filter based on Month number (1-12).
   in: body
   required: false
   type: integer
