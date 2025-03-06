@@ -1,0 +1,17 @@
+{
+  "versions": [
+    {
+      "id": "v2",
+      "links": [
+        {
+          "href": "https://api-enterprise-dashboard-beta.otc-service.com/v2",
+          "rel": "self"
+        }
+      ],
+      "min_version": "",
+      "status": "CURRENT",
+      "updated": "2024-05-27T00:00:00Z",
+      "version": ""
+    }
+  ]
+}

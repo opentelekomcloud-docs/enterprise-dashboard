@@ -30,3 +30,9 @@ Response Parameters
 -------------------
 
 N/A
+
+Response Example
+----------------
+
+.. literalinclude:: examples/health-response.json
+   :language: javascript

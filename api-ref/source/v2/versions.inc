@@ -31,3 +31,10 @@ Response Parameters
 
 N/A
 
+
+Response Example
+----------------
+
+.. literalinclude:: examples/version-response.json
+   :language: javascript
+

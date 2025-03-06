@@ -97,4 +97,3 @@ Response Example
 
 .. literalinclude:: examples/consumption-get-daily-response.json
    :language: javascript
-
