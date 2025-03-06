@@ -11,7 +11,7 @@ organization.
 
 
 Business.consumption_daily
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This table represents your billing data according to your Open Telekom
 Cloud invoice (except limitations listed in chapter Current
@@ -109,7 +109,7 @@ Limitations):
 
 
 Business.consumption_hourly
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This table represents your billing data according to your Open Telekom
 Cloud invoice (except limitations listed in chapter Current
@@ -150,7 +150,7 @@ Limitations):
 |                           |                      | applied.             |
 +---------------------------+----------------------+----------------------+
 | product                   | varchar              | This field displays  |
-|                           |                      | the product_id        |
+|                           |                      | the product_id       |
 |                           |                      | In case you need     |
 |                           |                      | more product details |
 |                           |                      | you have to join     |
@@ -223,7 +223,7 @@ Business.product
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| id                   | varchar              | The ID of the        |
+| id                   | varchar              | The ID of the         |
 |                       |                      | product used in the  |
 |                       |                      | T-Systems billing    |
 |                       |                      | system               |
@@ -259,7 +259,7 @@ Business.product
 
 
 Business.tag_daily
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 This table gives you a list of tag keys and tag values, which are
 pairs. This table is used in Tagging dashboards to access dashboards
@@ -285,7 +285,7 @@ needs to query to fill these variables.
 
 
 Business.tag_hourly
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 This table gives you a list of tag keys and tag values, which are
 pairs. This table is used in Tagging dashboards to access dashboards
