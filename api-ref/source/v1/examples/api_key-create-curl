@@ -1,4 +1,0 @@
-curl -X POST 'https://api-enterprise-dashboard.otc-service.com/v1/grafana/auth/keys' \
-  -H 'Content-Type: application/json' \
-  -H 'Authorization: Basic {base64(username:password)}' \
-  --data-raw '{"name": "myApiKey"}'

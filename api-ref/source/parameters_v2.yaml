@@ -1,0 +1,89 @@
+###############################################################################
+# Path fields
+###############################################################################
+###############################################################################
+# Query fields
+###############################################################################
+contract:
+  description: |
+    To filter based on contract.
+  in: query
+  required: false
+  type: integer
+date:
+  description: |
+    To filter based on the date the service was consumed.
+    format = YYYY-MM-DD
+  in: query
+  required: false
+  type: string
+hour:
+  description: |
+    To filter based on Hour of the day (0-23).
+  in: query
+  required: false
+  type: integer
+month:
+  description: |
+    To filter based on Month number (1-12).
+  in: query
+  required: false
+  type: integer
+product:
+  description: |
+    To filter based on Product Id.
+  in: query
+  required: false
+  type: integer
+product_description:
+  description: |
+    To filter based on Product Description.
+  in: query
+  required: false
+  type: string
+project_name:
+  description: |
+    To filter based on project name like "eu-de".
+  in: query
+  required: false
+  type: string
+resource_id:
+  description: |
+    To filter based on the resource id. This field is a unique identifier for all services.
+  in: query
+  required: false
+  type: string
+show_tag:
+  description: |
+    This field decides if the tags on the resources will be shown in the result.
+    To filter based on tags by tag_key or tag_value filters.
+  in: query
+  required: false
+  type: boolean
+tag_key:
+  description: |
+    To filter based on the tag key attached to a resource. Please note that tags are a pair of tag key and tag value. 
+    Only effective with tagged=true.
+  in: query
+  required: false
+  type: string
+tag_value:
+  description: |
+    To filter based on the tag value. Please note that tags are a pair of tag key and tag value. 
+    Only effective with tagged=true.
+  in: query
+  required: false
+  type: string
+week:
+  description: |
+    To filter based on Week number (1-53).
+  in: query
+  required: false
+  type: integer
+year:
+  description: |
+    To filter based on Year (2020-2100).
+  in: query
+  required: false
+  type: integer
+

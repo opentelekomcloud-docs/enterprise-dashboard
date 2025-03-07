@@ -3,7 +3,7 @@
 Health
 ======
 
-.. rest_method:: GET /v1/consumption/health
+.. rest_method:: GET /v2/health
 
 This endpoint is used to get the API's health. There is no authentication required and results are not cached. It's used for monitoring the health of our service.
 
@@ -30,3 +30,9 @@ Response Parameters
 -------------------
 
 N/A
+
+Response Example
+----------------
+
+.. literalinclude:: examples/health-response.json
+   :language: javascript

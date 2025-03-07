@@ -1,2 +1,0 @@
-curl -X GET 'https://api-enterprise-dashboard.otc-service.com/v1/Grafana/auth/keys' \
-    -H 'Authorization: Basic {base64(username:password)}'

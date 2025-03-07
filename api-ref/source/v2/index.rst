@@ -1,7 +1,7 @@
 :tocdepth: 3
 
 =====================================
-Enterprise Dashboard API v1 (Current)
+Enterprise Dashboard API v2 (Current)
 =====================================
 
 As an admin user of your organization, you can create API keys, these API keys will allow you to gather consumption data
@@ -15,7 +15,7 @@ to 90 days per default. Please make sure that the token security level is set as
 
 You can access https://api-enterprise-dashboard.otc-service.com/ to get started with different API endpoints as well.
 Please keep in mind that you still need at least a user account with admin permissions to interact with the API. All
-endpoints, except the Health Endpoints, require Authentification.
+endpoints, except the Health Endpoints, require Authentication.
 
 .. image:: /images/image3.png
    :width: 6.62222in
@@ -31,17 +31,8 @@ Health
 ------
 .. include:: health.inc
 
----------------
-Grafana API Key
----------------
-.. include:: api_key.inc
-
--------------
-Organizations
--------------
-.. include:: organizations.inc
-
 --------
 Versions
 --------
 .. include:: versions.inc
+

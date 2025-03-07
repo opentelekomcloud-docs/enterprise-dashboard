@@ -40,18 +40,21 @@ consumption_date:
   in: body
   required: false
   type: string
+
 contract:
   description: |
     To filter based on contract.
   in: body
   required: false
   type: integer
+
 key_name:
   description: |
     Name of the API key.
   in: body
   required: true
   type: string
+
 limit:
   description: |
     Limits the number consumption data to be returned.
@@ -61,6 +64,7 @@ limit:
   in: body
   required: false
   type: integer
+
 offset:
   description: |
     Allows you to fetch next set of consumption data.
@@ -78,18 +82,21 @@ product:
   in: body
   required: false
   type: integer
+
 product_description:
   description: |
     To filter based on Product Description.
   in: body
   required: false
   type: string
+
 project_name:
   description: |
     To filter based on project name like "eu-de".
   in: body
   required: false
   type: string
+
 resource_id:
   description: |
     To filter based on the resource id. This field is a unique identifier for all services.
@@ -103,6 +110,7 @@ tag_key:
   in: body
   required: false
   type: string
+
 tag_value:
   description: |
     To filter based on the tag value. Please note that tags are a pair of tag key and tag value. 
@@ -110,6 +118,7 @@ tag_value:
   in: body
   required: false
   type: string
+
 tagged:
   description: |
     This field decides if the tags on the resources will be shown in the result.
@@ -117,4 +126,3 @@ tagged:
   in: body
   required: false
   type: boolean
-
