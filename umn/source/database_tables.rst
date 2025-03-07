@@ -223,7 +223,7 @@ Business.product
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| id                   | varchar              | The ID of the         |
+| id                    | varchar              | The ID of the        |
 |                       |                      | product used in the  |
 |                       |                      | T-Systems billing    |
 |                       |                      | system               |
