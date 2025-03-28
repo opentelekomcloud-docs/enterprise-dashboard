@@ -4,7 +4,6 @@ otcdocstheme<2.0.0 # Apache-2.0
 
 # releasenotes
 reno>=3.1.0 # Apache-2.0
-otc-api-ref
 
 otc-sphinx-directives>=0.1.0
 sphinx-minify>=0.0.1 # Apache-2.0
