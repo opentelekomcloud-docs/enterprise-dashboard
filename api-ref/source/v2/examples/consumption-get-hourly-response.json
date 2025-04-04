@@ -4,7 +4,7 @@
         "amount_excluding_discount": 2.5867339103034e-06,
         "bill_cycle_day": 1,
         "consumption_date": "2024-08-02T00:00:00",
-        "contract": 1200017670,
+        "contract": 1000012345,
         "etl_updated": "2024-08-02T03:24:00",
         "external_priceplan": "pp_OTC_RDS_BK_SP_EU-DE",
         "product": "OTC_RDS_BK_SP",
