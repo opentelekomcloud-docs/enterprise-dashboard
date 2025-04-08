@@ -73,29 +73,14 @@ Limitations):
 |                           |                      |                      |
 |                           |                      | Cost types:          |
 |                           |                      |                      |
-|                           |                      | -  K017 & K018       |
+|                           |                      | -  EL                |
 |                           |                      |    elastic prices    |
 |                           |                      |                      |
-|                           |                      | -  D102 advance      |
-|                           |                      |    payments          |
+|                           |                      | -  RC                |
+|                           |                      |    reoccuring charges|
 |                           |                      |                      |
-|                           |                      | -  D103& D536        |
-|                           |                      |    monthly payments  |
-|                           |                      |                      |
-|                           |                      | -  D104 allowances   |
-|                           |                      |                      |
-|                           |                      | -  D537 free amount  |
-|                           |                      |    of a monthly      |
-|                           |                      |    payment e.g. of a |
-|                           |                      |    reserved package  |
-|                           |                      |                      |
-|                           |                      | Discount types:      |
-|                           |                      |                      |
-|                           |                      | -  R100 applied      |
-|                           |                      |    discount          |
-|                           |                      |                      |
-|                           |                      | -  R400 enterprise   |
-|                           |                      |    discount          |
+|                           |                      | -  OTF               |
+|                           |                      |    one time fee      |
 |                           |                      |                      |
 +---------------------------+----------------------+----------------------+
 | aggregation_id            | varchar              | Unique identifier    |
@@ -181,29 +166,14 @@ Limitations):
 |                           |                      |                      |
 |                           |                      | Cost types:          |
 |                           |                      |                      |
-|                           |                      | -  K017 & K018       |
+|                           |                      | -  EL                |
 |                           |                      |    elastic prices    |
 |                           |                      |                      |
-|                           |                      | -  D102 advance      |
-|                           |                      |    payments          |
+|                           |                      | -  RC                |
+|                           |                      |    reoccuring charges|
 |                           |                      |                      |
-|                           |                      | -  D103& D536        |
-|                           |                      |    monthly payments  |
-|                           |                      |                      |
-|                           |                      | -  D104 allowances   |
-|                           |                      |                      |
-|                           |                      | -  D537 free amount  |
-|                           |                      |    of a monthly      |
-|                           |                      |    payment e.g. of a |
-|                           |                      |    reserved package  |
-|                           |                      |                      |
-|                           |                      | Discount types:      |
-|                           |                      |                      |
-|                           |                      | -  R100 applied      |
-|                           |                      |    discount          |
-|                           |                      |                      |
-|                           |                      | -  R400 enterprise   |
-|                           |                      |    discount          |
+|                           |                      | -  OTF               |
+|                           |                      |    one time fee      |
 |                           |                      |                      |
 +---------------------------+----------------------+----------------------+
 | usage_id                  | varchar              | Unique identifier    |
