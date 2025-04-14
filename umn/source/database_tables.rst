@@ -77,7 +77,7 @@ Limitations):
 |                           |                      |    elastic prices    |
 |                           |                      |                      |
 |                           |                      | -  RC                |
-|                           |                      |    reoccuring charges|
+|                           |                      |    reccuring charges |
 |                           |                      |                      |
 |                           |                      | -  OTF               |
 |                           |                      |    one time fee      |
@@ -170,7 +170,7 @@ Limitations):
 |                           |                      |    elastic prices    |
 |                           |                      |                      |
 |                           |                      | -  RC                |
-|                           |                      |    reoccuring charges|
+|                           |                      |    reccuring charges |
 |                           |                      |                      |
 |                           |                      | -  OTF               |
 |                           |                      |    one time fee      |

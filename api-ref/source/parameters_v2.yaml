@@ -4,6 +4,12 @@
 ###############################################################################
 # Query fields
 ###############################################################################
+consumption_type:
+  description: |
+    To filter record based on billing package like elastic prices(EL) or recurring(RC).
+  in: query
+  required: false
+  type: string
 contract:
   description: |
     To filter based on contract.
