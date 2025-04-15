@@ -42,6 +42,10 @@
   default: |
     The entity of the request is in a format not supported by the requested
     resource for the method.
+422:
+  default: |
+    The request was well-formed but contains semantic errors,
+    such as missing dependent mandatory parameters.
 500:
   default: |
     Something went wrong with the service which prevents it from fulfilling
