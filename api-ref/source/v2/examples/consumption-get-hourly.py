@@ -12,7 +12,7 @@ TOKEN = "<YOUR_TOKEN_HERE>"  # Service account or API token
 
 # Set request headers
 headers = {
-    "Content-Type": "application/json",
+    "Content-Type": "application/x-ndjson",
     "Authorization": f"Bearer {TOKEN}",
 }
 
@@ -33,10 +33,9 @@ try:
         logger.error("Failed to fetch data: %s", response.text)
     else:
         # Stream and decode the JSON lines
-        for chunk in response.iter_lines():
-            if chunk:
-                line = chunk.decode("utf-8")
-                data = json.loads(line)
+        for data_row in response.iter_lines(decode_unicode=True):
+            if data_row:
+                data = json.loads(data_row)
                 logger.info("Received data: %s", data)
 
 except requests.exceptions.RequestException as e:
