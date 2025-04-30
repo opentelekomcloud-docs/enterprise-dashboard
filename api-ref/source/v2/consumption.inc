@@ -49,8 +49,8 @@ Example request using curl with query parameters and headers:
 Response Parameters
 -------------------
 
-Response Example (converted to JSON from string)
-------------------------------------------------
+Response Example (converted to JSON from byte string)
+-----------------------------------------------------
 
 .. literalinclude:: examples/consumption-get-hourly-response.json
    :language: javascript
@@ -114,8 +114,8 @@ Example request using curl with query parameters and headers:
 Response Parameters
 -------------------
 
-Response Example (converted to JSON from string)
-------------------------------------------------
+Response Example (converted to JSON from byte string)
+-----------------------------------------------------
 
 .. literalinclude:: examples/consumption-get-daily-response.json
    :language: javascript
