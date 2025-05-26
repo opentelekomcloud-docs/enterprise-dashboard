@@ -1,14 +1,13 @@
 sphinx>=2.0.0,!=2.1.0 # BSD
-otc-api-ref
+
 otcdocstheme<2.0.0 # Apache-2.0
+otc-api-ref
 
 # releasenotes
 reno>=3.1.0 # Apache-2.0
 
 otc-sphinx-directives>=0.1.0
 sphinx-minify>=0.0.1 # Apache-2.0
-
-git+https://gitea.eco.tsi-dev.otc-service.com/infra/otc-metadata.git#egg=otc_metadata
-
+git+https://gitea.eco.tsi-dev.otc-service.com/infra/otc-metadata-rework.git#egg=otc_metadata
 setuptools
 gitpython
