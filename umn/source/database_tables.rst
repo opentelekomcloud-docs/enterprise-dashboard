@@ -241,8 +241,8 @@ needs to query to fill these variables.
 +=======================+======================+======================+
 | contract              | numeric              | Your contract id     |
 +-----------------------+----------------------+----------------------+
-| aggregation           | varchar              | Key for internal     |
-|                       |                      | purposes             |
+| aggregation_id        | varchar              | Aggregation id for   |
+|                       |                      | tag                  |
 +-----------------------+----------------------+----------------------+
 | key                   | varchar              | The tag keys which   |
 |                       |                      | are used in your     |
@@ -267,8 +267,7 @@ needs to query to fill these variables.
 +=======================+======================+======================+
 | contract              | numeric              | Your contract id     |
 +-----------------------+----------------------+----------------------+
-| aggregation           | varchar              | Key for internal     |
-|                       |                      | purposes             |
+| usage_id              | varchar              | Usage id for tag     |
 +-----------------------+----------------------+----------------------+
 | key                   | varchar              | The tag keys which   |
 |                       |                      | are used in your     |
