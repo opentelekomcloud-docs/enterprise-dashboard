@@ -6,6 +6,8 @@
       - helpcenter-base-jobs
     vars:
       sphinx_pdf_files:
+        - ed-umn.pdf
+        - ed-api-ref.pdf
     check:
       jobs:
         - noop
