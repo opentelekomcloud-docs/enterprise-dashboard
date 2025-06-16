@@ -20,7 +20,6 @@ from git import Repo
 from datetime import datetime
 
 extensions = [
-    'otc_api_ref',
     'otcdocstheme',
 ]
 
@@ -39,6 +38,7 @@ otcdocs_doc_type = 'api-ref'
 otcdocs_service_category = 'other'
 otcdocs_service_title = 'Enterprise Dashboard'
 otcdocs_service_type = 'ed'
+otcdocs_service_environment = 'public'
 otcdocs_cloud_environment = 'eu_de'
 otcdocs_search_environment = 'hc_de'
 otcdocs_search_index = 'search_index_de'
