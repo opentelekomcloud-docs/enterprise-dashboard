@@ -87,15 +87,14 @@ Enterprise Dashboard to view just one tenant, or an overall view if
 you grant them access to your global dashboard.
 
 
-Current Limitations
--------------------
+Current Limitations & Data import
+---------------------------------
 
 In the following you will see a list of current limitations:
 
-- Billing data is updated once per day around 8 am (GMT +2).
+- Daily aggregation data is updated once per day at 2:30am UTC
 
-- Billing Data is available up to the day before the current date. On
-  Tuesday you can see data up until Monday.
+- Hourly data is updated once every hour
 
 - Alerting for queries using Grafana variables (for example $tenant
   from Tenant Switcher, used in Payer based Dashboard) is not
@@ -103,5 +102,6 @@ In the following you will see a list of current limitations:
 
 - VAT or other taxes are not included in Enterprise Dashboard.
 
--  Enterprise Dashboard cannot be ordered in T-Systems eShop.
+-  Any form of discounts are currently not available in Enterprise Dashboard
+   All prices are according to publicly available price lists. Refer to: https://www.open-telekom-cloud.com/service-description
    
