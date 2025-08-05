@@ -6,7 +6,7 @@ How to
 
   There is a bug in grafana (see https://github.com/grafana/grafana/pull/61927)
   which doesn't let you edit queries anymore. To solve this problem you need
-  to go to the datasource select the same datasource again and then the query 
+  to go to the datasource, select the same datasource again and then the query 
   editor should appear again.
 
 Switch Organizations
@@ -32,7 +32,7 @@ global dashboard to have an overview of multiple contracts or a
 contract-specific dashboard if you want to have the data of one specific
 contract.
 
-- The name of a payer organization follows the pattern "00000XXXX <org
+- The name of a businesspartner organization follows the pattern "00000XXXX <org
   name>".
 
 - The name of a contract organization follows the pattern "10000XXXXX".
@@ -61,7 +61,7 @@ located in the folder “Provided by Open Telekom Cloud”.
 
 .. image:: media/image09.png
 
-Consumption view
+Consumption view (Hourly/Daily)
 ~~~~~~~~~~~~~~~~
 
 The Dashboard “Consumption view” aims to display your spendings
@@ -75,7 +75,9 @@ You will see your aggregated costs already in the first panels of the
 dashboards and will get more detailed views for individual product
 categories or projects further below.
 
-Consumption view with Tags
+This dashboard is available in hourly and daily data granularity.
+
+Consumption view with Tags (Hourly/Daily)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Dashboard “Consumption view with Tags” displays your
@@ -106,7 +108,9 @@ be found further below in the dashboard.
 
 .. image:: media/image14.png
 
-Business Partner consumption view
+This dashboard is available in hourly and daily data granularity.
+
+Business Partner consumption view (Hourly/Daily)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Business Partner Dashboards are available for users of Enterprise Dashboard
@@ -124,9 +128,9 @@ the mentioned selection box:
 
 .. image:: media/image16.png
 
+This dashboard is available in hourly and daily data granularity.
 
-
-Business Partner consumption view with Tags
+Business Partner consumption view with Tags (Hourly/Daily)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Business Partner are available for users of Enterprise Dashboard
@@ -144,6 +148,7 @@ your tenants, see screenshot below:
 
 .. image:: media/image18.png
 
+This dashboard is available in hourly and daily data granularity.
 
 Alerts
 ~~~~~~
