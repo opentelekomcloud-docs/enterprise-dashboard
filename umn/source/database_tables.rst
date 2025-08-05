@@ -20,30 +20,36 @@ Limitations):
 +---------------------------+----------------------+----------------------+
 | Field name                | Data type            | Description          |
 +===========================+======================+======================+
+| aggregation_id            | varchar              | Unique identifier    |
+|                           |                      | for a row            |
++---------------------------+----------------------+----------------------+
+| project_id                | varchar              | The project id       |
+|                           |                      | where the service is |
+|                           |                      | consumed.            |
++---------------------------+----------------------+----------------------+
+| resource_id               | varchar              | The resource_id      |
+|                           |                      | of the service       |
+|                           |                      | consumed.            |
++---------------------------+----------------------+----------------------+
 | contract                  | Int8                 | Your contract id     |
-+---------------------------+----------------------+----------------------+
-| consumption_date          | timestamp            | Date when the        |
-|                           |                      | billing item was     |
-|                           |                      | created / when you   |
-|                           |                      | consumed the service |
-+---------------------------+----------------------+----------------------+
-| quantity_type             | varchar              | This field displays  |
-|                           |                      | the unit for the     |
-|                           |                      | billing items.       |
 +---------------------------+----------------------+----------------------+
 | quantity                  | Float8               | The quantity of the  |
 |                           |                      | item which has to be |
 |                           |                      | interpreted in       |
 |                           |                      | combination with the |
 |                           |                      | unit field,          |
-|                           |                      | e.g. "10.GB".        |
+|                           |                      | e.g. "10 GB".        |
 +---------------------------+----------------------+----------------------+
-| amount                    | Float8               | This field displays  |
-|                           |                      | the actual costs in  |
-|                           |                      | Euro, same as        |
-|                           |                      | Price*Quantity.      |
-|                           |                      | Including discounts  | 
-|                           |                      | and vouchers         |
+| quantity_type             | varchar              | This field displays  |
+|                           |                      | the unit for the     |
+|                           |                      | billing items.       |
+|                           |                      | Values are GB, h or  |
+|                           |                      | pc.                  |
++---------------------------+----------------------+----------------------+
+| consumption_date          | timestamp            | Date when the        |
+|                           |                      | billing item was     |
+|                           |                      | created / when you   |
+|                           |                      | consumed the service |
 +---------------------------+----------------------+----------------------+
 | product                   | varchar              | This field displays  |
 |                           |                      | the produt_id        |
@@ -56,17 +62,22 @@ Limitations):
 | product_description       | varchar              | The name of the      |
 |                           |                      | product              |
 +---------------------------+----------------------+----------------------+
-| project_id                | varchar              | The project id       |
-|                           |                      | where the service is |
-|                           |                      | consumed.            |
+| amount                    | Float8               | This field displays  |
+|                           |                      | the actual costs in  |
+|                           |                      | Euro, same as        |
+|                           |                      | Price*Quantity.      |
+|                           |                      | Including discounts  | 
+|                           |                      | and vouchers         |
 +---------------------------+----------------------+----------------------+
-| project_name              | varchar              | The project name     |
-|                           |                      | where the service is |
-|                           |                      | consumed.            |
+| region                    | varchar              | The name of the      |
+|                           |                      | region to which a    |
+|                           |                      | resource belongs     |
+|                           |                      | (e.g. 'eu-de')       |
 +---------------------------+----------------------+----------------------+
-| resource_id               | varchar              | The resource_id      |
-|                           |                      | of the service       |
-|                           |                      | consumed.            |
+| status                    | varchar              | Technical attribute  |
++---------------------------+----------------------+----------------------+
+| etl_updated               | timestamp            | Technical attribute  |
+|                           |                      | for invoice          |
 +---------------------------+----------------------+----------------------+
 | consumption_type          | varchar              | The type of dataset  |
 |                           |                      | which can be:        |
@@ -83,13 +94,9 @@ Limitations):
 |                           |                      |    one time fee      |
 |                           |                      |                      |
 +---------------------------+----------------------+----------------------+
-| aggregation_id            | varchar              | Unique identifier    |
-|                           |                      | for a row            |
-+---------------------------+----------------------+----------------------+
-| region                    | varchar              | The name of the      |
-|                           |                      | region to which a    |
-|                           |                      | resource belongs     |
-|                           |                      | (e.g. 'eu-de')       |
+| project_name              | varchar              | The project name     |
+|                           |                      | where the service is |
+|                           |                      | consumed             |
 +---------------------------+----------------------+----------------------+
 
 
@@ -103,16 +110,18 @@ Limitations):
 +---------------------------+----------------------+----------------------+
 | Field name                | Data type            | Description          |
 +===========================+======================+======================+
+| usage_id                  | varchar              | Unique identifier    |
+|                           |                      | for a row            |
++---------------------------+----------------------+----------------------+
+| project_id                | varchar              | The project id       |
+|                           |                      | where the service is |
+|                           |                      | consumed.            |
++---------------------------+----------------------+----------------------+
+| resource_id               | varchar              | The resource_id      |
+|                           |                      | of the service       |
+|                           |                      | consumed.            |
++---------------------------+----------------------+----------------------+
 | contract                  | Int8                 | Your contract id     |
-+---------------------------+----------------------+----------------------+
-| consumption_date          | timestamp            | Date when the        |
-|                           |                      | billing item was     |
-|                           |                      | created / when you   |
-|                           |                      | consumed the service |
-+---------------------------+----------------------+----------------------+
-| quantity_type             | varchar              | This field displays  |
-|                           |                      | the unit for the     |
-|                           |                      | billing items.       |
 +---------------------------+----------------------+----------------------+
 | quantity                  | Float8               | The quantity of the  |
 |                           |                      | item which has to be |
@@ -121,18 +130,16 @@ Limitations):
 |                           |                      | unit field,          |
 |                           |                      | e.g. "10.GB".        |
 +---------------------------+----------------------+----------------------+
-| amount                    | Float8               | This field displays  |
-|                           |                      | the actual costs in  |
-|                           |                      | Euro, same as        |
-|                           |                      | Price*Quantity.      |
-|                           |                      | Including discounts  | 
-|                           |                      | and vouchers         |
+| quantity_type             | varchar              | This field displays  |
+|                           |                      | the unit for the     |
+|                           |                      | billing items.       |
+|                           |                      | Values are GB, h or  |
+|                           |                      | pc.                  |
 +---------------------------+----------------------+----------------------+
-| amount_exluding_discount  | Float8               | This field displays  |
-|                           |                      | the actual costs in  |
-|                           |                      | total cost before    |
-|                           |                      | the discounts are    |
-|                           |                      | applied.             |
+| consumption_date          | timestamp            | Date when the        |
+|                           |                      | billing item was     |
+|                           |                      | created / when you   |
+|                           |                      | consumed the service |
 +---------------------------+----------------------+----------------------+
 | product                   | varchar              | This field displays  |
 |                           |                      | the product_id       |
@@ -145,21 +152,35 @@ Limitations):
 | product_description       | varchar              | The name of the      |
 |                           |                      | product              |
 +---------------------------+----------------------+----------------------+
-| project_id                | varchar              | The project id       |
-|                           |                      | where the service is |
-|                           |                      | consumed.            |
+| external_priceplan        | varchar              | The name of the      |
+|                           |                      | priceplan            |
 +---------------------------+----------------------+----------------------+
-| project_name              | varchar              | The project name     |
-|                           |                      | where the service is |
-|                           |                      | consumed.            |
+| amount_excluding_discount | Float8               | This field displays  |
+|                           |                      | the actual costs in  |
+|                           |                      | total cost before    |
+|                           |                      | the discounts are    |
+|                           |                      | applied.             |
 +---------------------------+----------------------+----------------------+
-| resource_id               | varchar              | The resource_id      |
-|                           |                      | of the service       |
-|                           |                      | consumed.            |
+| amount                    | Float8               | This field displays  |
+|                           |                      | the actual costs in  |
+|                           |                      | Euro, same as        |
+|                           |                      | Price*Quantity.      |
+|                           |                      | Including discounts  | 
+|                           |                      | and vouchers         |
 +---------------------------+----------------------+----------------------+
 | bill_cycle_day            | varchar              | Billing calculation  |
 |                           |                      | cycle typically      | 
 |                           |                      | daily or 1           |
++---------------------------+----------------------+----------------------+
+| region                    | varchar              | The name of the      |
+|                           |                      | region to which a    |
+|                           |                      | resource belongs     |
+|                           |                      | (e.g. 'eu-de')       |
++---------------------------+----------------------+----------------------+
+| status                    | varchar              | Technical attribute  |
++---------------------------+----------------------+----------------------+
+| etl_updated               | timestamp            | Technical attribute  |
+|                           |                      | for invoice          |
 +---------------------------+----------------------+----------------------+
 | consumption_type          | varchar              | The type of dataset  |
 |                           |                      | which can be:        |
@@ -176,14 +197,12 @@ Limitations):
 |                           |                      |    one time fee      |
 |                           |                      |                      |
 +---------------------------+----------------------+----------------------+
-| usage_id                  | varchar              | Unique identifier    |
-|                           |                      | for a row            |
+| project_name              | varchar              | The project name     |
+|                           |                      | where the service is |
+|                           |                      | consumed.            |
 +---------------------------+----------------------+----------------------+
-| region                    | varchar              | The name of the      |
-|                           |                      | region to which a    |
-|                           |                      | resource belongs     |
-|                           |                      | (e.g. 'eu-de')       |
-+---------------------------+----------------------+----------------------+
+
+
 
 
 
@@ -193,14 +212,6 @@ Business.product
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| id                    | varchar              | The ID of the        |
-|                       |                      | product used in the  |
-|                       |                      | T-Systems billing    |
-|                       |                      | system               |
-+-----------------------+----------------------+----------------------+
-| description           | varchar              | The description of   |
-|                       |                      | the product          |
-+-----------------------+----------------------+----------------------+
 | category              | String               | The category of the  |
 |                       |                      | the product, used in |
 |                       |                      | the T-Systems        |
@@ -223,8 +234,43 @@ Business.product
 |                       |                      | -  Storage           |
 |                       |                      |                      |
 +-----------------------+----------------------+----------------------+
+| changed_at            | timestamp            | Technical attribute  |
++-----------------------+----------------------+----------------------+
+| created_at            | timestamp            | Technical attribute  |
++-----------------------+----------------------+----------------------+
+| description           | varchar              | The description of   |
+|                       |                      | the product          |
++-----------------------+----------------------+----------------------+
 | family                | String               | The product family   |
 |                       |                      | of a service         |
++-----------------------+----------------------+----------------------+
+| hash_value            | varchar              | Technical attribute  |
++-----------------------+----------------------+----------------------+
+| id                    | varchar              | The ID of the        |
+|                       |                      | product used in the  |
+|                       |                      | T-Systems billing    |
+|                       |                      | system               |
++-----------------------+----------------------+----------------------+
+| lifecycle_status      | varchar              | "ACTIVE" or "RETIRED"|
++-----------------------+----------------------+----------------------+
+| os                    | varchar              | Refers to the        |
+|                       |                      | operating system, if |
+|                       |                      | applicable           |
++-----------------------+----------------------+----------------------+
+| ram                   | varchar              | Refers to the        |
+|                       |                      | ram size, if         |
+|                       |                      | applicable           |
++-----------------------+----------------------+----------------------+
+| size                  | varchar              | Refers to the        |
+|                       |                      | flavor size, if      |
+|                       |                      | applicable           |
++-----------------------+----------------------+----------------------+
+| source_id             | varchar              | Technical attribute  |
++-----------------------+----------------------+----------------------+
+| status                | varchar              | "ACTIVE" or "RETIRED"|
++-----------------------+----------------------+----------------------+
+| vcpu                  | varchar              | Refers to number of  |
+|                       |                      | vCPU, if applicable  |
 +-----------------------+----------------------+----------------------+
 
 
@@ -239,7 +285,7 @@ needs to query to fill these variables.
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| contract              | numeric              | Your contract id     |
+| id                    | numeric              | Technical attribute  |
 +-----------------------+----------------------+----------------------+
 | aggregation_id        | varchar              | Aggregation id for   |
 |                       |                      | tag                  |
@@ -251,6 +297,8 @@ needs to query to fill these variables.
 | value                 | varchar              | The tag values which |
 |                       |                      | are used in your     |
 |                       |                      | infrastructure       |
++-----------------------+----------------------+----------------------+
+| contract              | numeric              | Your contract id     |
 +-----------------------+----------------------+----------------------+
 
 
@@ -265,9 +313,10 @@ needs to query to fill these variables.
 +-----------------------+----------------------+----------------------+
 | Field name            | Data type            | Description          |
 +=======================+======================+======================+
-| contract              | numeric              | Your contract id     |
+| id                    | numeric              | Technical attribute  |
 +-----------------------+----------------------+----------------------+
-| usage_id              | varchar              | Usage id for tag     |
+| usage_id              | varchar              | Aggregation id for   |
+|                       |                      | tag                  |
 +-----------------------+----------------------+----------------------+
 | key                   | varchar              | The tag keys which   |
 |                       |                      | are used in your     |
@@ -276,6 +325,82 @@ needs to query to fill these variables.
 | value                 | varchar              | The tag values which |
 |                       |                      | are used in your     |
 |                       |                      | infrastructure       |
++-----------------------+----------------------+----------------------+
+| contract              | numeric              | Your contract id     |
++-----------------------+----------------------+----------------------+
+
+Business.reserved_packages
+~~~~~~~~~~~~~~~~~
+
+This table gives you additional information about your additional
+subscriptions, which can be reoccuring charges or one time fee's.
+In the tables business.consumption_[daily/hourly] these datasets 
+are distinguishable via the consumption type "RC" or "OTF".
+Please note that this table is still work in progress.
+
++-----------------------+----------------------+----------------------+
+| Field name            | Data type            | Description          |
++=======================+======================+======================+
+| key_id                | varchar              | Technical attribute  |
++-----------------------+----------------------+----------------------+
+| subscription_id       | varchar              | Technical attribute  |
++-----------------------+----------------------+----------------------+
+| subscription_status   | varchar              | Indicates if the     |
+|                       |                      | package is active or |
+|                       |                      | expired              |
++-----------------------+----------------------+----------------------+
+| subscription          | timestamp            | Date of booking      |
+| _start_date           |                      |                      |
++-----------------------+----------------------+----------------------+
+| subscription          | timestamp            | Termination of       |
+| _end_date             |                      | booking              |
++-----------------------+----------------------+----------------------+
+| subscription          | timestamp            | Technical attribute  |
+| _effective_since      |                      |                      |
++-----------------------+----------------------+----------------------+
+| subscription_next     | timestamp            | Technical attribute  |
+| _effective_since      |                      |                      |
++-----------------------+----------------------+----------------------+
+| subscription_changed  | timestamp            | Technical attribute  |
+| _at                   |                      |                      |
++-----------------------+----------------------+----------------------+
+| product_name          | varchar              | Same as product_id   |
++-----------------------+----------------------+----------------------+
+| quantity              | Float8               | Number of individual |
+|                       |                      | bookings             |
++-----------------------+----------------------+----------------------+
+| price                 | Float8               | Price per unit.      |
+|                       |                      | General price info.  |
+|                       |                      | Individual price     |
+|                       |                      | may differ           |
++-----------------------+----------------------+----------------------+
+| bucket_id             | varchar              | Unique ID for each   | 
+|                       |                      | free amount per      |
+|                       |                      | month                | 
++-----------------------+----------------------+----------------------+
+| filling_quantity      | numeric              | Already used free    | 
+|                       |                      | amount               | 
++-----------------------+----------------------+----------------------+
+| limit_quantity        | numeric              | Upper limit of free  | 
+|                       |                      | amount               | 
++-----------------------+----------------------+----------------------+
+| bucket_type           | varchar              | "Bucket" if free     | 
+|                       |                      | amount of reserved   |
+|                       |                      | package              |
++-----------------------+----------------------+----------------------+
+| bucket_start_date     | timestamp            | Start date of a      | 
+|                       |                      | bucket               |
++-----------------------+----------------------+----------------------+
+| bucket_end_date       | timestamp            | End date of a        | 
+|                       |                      | bucket               |
++-----------------------+----------------------+----------------------+
+| bucket_exp_date       | timestamp            | End date of a        | 
+|                       |                      | bucket               |
++-----------------------+----------------------+----------------------+
+| contract              | Int8                 | Your contract id     |
++-----------------------+----------------------+----------------------+
+| product_description   | varchar              | The name of the      |
+|                       |                      | product              |
 +-----------------------+----------------------+----------------------+
 
 Business.contract
