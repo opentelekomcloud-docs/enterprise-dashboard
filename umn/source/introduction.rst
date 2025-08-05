@@ -51,13 +51,13 @@ Enterprise Dashboard is available in three versions.
 |                         | Access   | Self      | Tenant   | Management   |
 |                         |          | Service   |          |              |
 +=========================+==========+===========+==========+==============+
-| Enterprise Dashboard    | ✓        | ✓        |          |              |
+| Enterprise Dashboard    | x        | x         |          |              |
 | Small                   |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
-| Enterprise Dashboard    | ✓        | ✓        | ✓        |              |
+| Enterprise Dashboard    | x        | x         |          |              |
 | Medium                  |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
-| Enterprise Dashboard    | ✓        | ✓        | ✓        | ✓            |
+| Enterprise Dashboard    | x        | x         | x        | x            |
 | Large                   |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
 
