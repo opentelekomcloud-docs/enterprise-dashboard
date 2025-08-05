@@ -17,17 +17,17 @@ lower cases before clicking Log In.
 
 .. note::
    
-   Enterprise Dashboard is offered via Direct sales only. Please
+   Enterprise Dashboard is offered via Direct sales or eShop. Please
    contact either your contractual partner to set up your access or
-   contact Request-OpenTelekomCloud@telekom.de.
+   contact Request-OpenTelekomCloud@telekom.de. It can be booked just as other additional services, e.g. reserved packges.
 
 
-Monitor Spendings on a Payer Level
-----------------------------------
+Monitor Spendings on a Businesspartner Level
+--------------------------------------------
 
-It will also allow you to monitor your spendings on a payer level.
+It will also allow you to monitor your spendings on a businesspartner level.
 This means that all costs for each of your tenants assigned to you as
-a payer are visible within one Dashboard.
+a businesspartner are visible within one Dashboard.
 
 
 Visualization with Grafana
@@ -51,13 +51,13 @@ Enterprise Dashboard is available in three versions.
 |                         | Access   | Self      | Tenant   | Management   |
 |                         |          | Service   |          |              |
 +=========================+==========+===========+==========+==============+
-| Enterprise Dashboard    | ✓        | ✓         |          |              |
+| Enterprise Dashboard    | x        | x         |          |              |
 | Small                   |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
-| Enterprise Dashboard    | ✓        | ✓         |          |              |
+| Enterprise Dashboard    | x        | x         |          |              |
 | Medium                  |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
-| Enterprise Dashboard    | ✓        | ✓         | ✓        |              |
+| Enterprise Dashboard    | x        | x         | x        | x            |
 | Large                   |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
 
