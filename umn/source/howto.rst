@@ -62,7 +62,7 @@ located in the folder “Provided by Open Telekom Cloud”.
 .. image:: media/image09.png
 
 Consumption view (Hourly/Daily)
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Dashboard “Consumption view” aims to display your spendings
 according to your monthly invoice. It focuses on attributes, which are
@@ -78,7 +78,7 @@ categories or projects further below.
 This dashboard is available in hourly and daily data granularity.
 
 Consumption view with Tags (Hourly/Daily)
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Dashboard “Consumption view with Tags” displays your
 invoice data with a focus on those resources, which have been
@@ -111,7 +111,7 @@ be found further below in the dashboard.
 This dashboard is available in hourly and daily data granularity.
 
 Business Partner consumption view (Hourly/Daily)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Business Partner Dashboards are available for users of Enterprise Dashboard
 Large.
@@ -131,7 +131,7 @@ the mentioned selection box:
 This dashboard is available in hourly and daily data granularity.
 
 Business Partner consumption view with Tags (Hourly/Daily)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Business Partner are available for users of Enterprise Dashboard
 Large.

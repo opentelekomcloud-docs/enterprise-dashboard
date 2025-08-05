@@ -330,7 +330,7 @@ needs to query to fill these variables.
 +-----------------------+----------------------+----------------------+
 
 Business.reserved_packages
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This table gives you additional information about your additional
 subscriptions, which can be reoccuring charges or one time fee's.

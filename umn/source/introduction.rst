@@ -23,7 +23,7 @@ lower cases before clicking Log In.
 
 
 Monitor Spendings on a Businesspartner Level
-----------------------------------
+--------------------------------------------
 
 It will also allow you to monitor your spendings on a businesspartner level.
 This means that all costs for each of your tenants assigned to you as
