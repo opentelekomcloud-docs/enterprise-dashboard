@@ -8,6 +8,7 @@
       sphinx_pdf_files:
         - ed-umn.pdf
         - ed-api-ref.pdf
+        - ed-alerting.pdf
     check:
       jobs:
         - noop
