@@ -20,7 +20,6 @@ from git import Repo
 from datetime import datetime
 
 extensions = [
-    'otc_api_ref',
     'otcdocstheme',
     'otc_sphinx_directives'
 ]
