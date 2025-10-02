@@ -12,5 +12,5 @@ to 90 days per default. Please make sure that the token security level is set as
 
 You can access https://api-alertservice.otc-service.com/ to get started with different API endpoints as well.
 The alerting documentation is accessible in OpenAPI 3.0 standard via on route “/api/docs”.  
-`API Documentation <https://alertservice.otc-service.com/api/docs >`__
+`API Documentation <https://alertservice.otc-service.com/api/docs>`__
 
