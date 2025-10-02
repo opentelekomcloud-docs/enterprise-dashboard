@@ -19,4 +19,3 @@ Enterprise Dashboard can be accessed by visiting the following URL:
    database_tables
    howto
    faq
-   appendix
