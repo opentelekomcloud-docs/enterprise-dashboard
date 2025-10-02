@@ -3,7 +3,7 @@ User interface
 
 Alert service provides a lightweight UI to check existing alerts and create new alerts.
 
-After accessing the service, you will see the Landing page. It list all alerts created
+After accessing the service, you will see the Landing page. It lists all alerts created
 against the contract/account. User can edit or delete alerts from this page by clicking
 the icons in the column "Actions".
 
@@ -98,3 +98,4 @@ Attributes for periodic alerts
 |                           |                      | Used to turn off/on  |
 |                           |                      | the alert            |
 +---------------------------+----------------------+----------------------+
+
