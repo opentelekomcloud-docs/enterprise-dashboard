@@ -27,3 +27,4 @@ jobs:
           pr_number: ${{ github.event.pull_request.number }}
           run_id: ${{ github.run_id }}
           ci_platform: github
+          github_token: ${{ secrets.GITHUB_TOKEN }}
