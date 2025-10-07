@@ -2,6 +2,8 @@
 - project:
     merge-mode: squash-merge
     default-branch: main
+    templates:
+      - helpcenter-base-jobs-no-check
     vars:
       sphinx_pdf_files:
         - ed-umn.pdf
