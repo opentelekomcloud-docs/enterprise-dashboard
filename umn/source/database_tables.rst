@@ -272,6 +272,42 @@ Business.product
 | vcpu                  | varchar              | Refers to number of  |
 |                       |                      | vCPU, if applicable  |
 +-----------------------+----------------------+----------------------+
+| pc_de                 | float                | Power consumption    |
+|                       |                      | coefficient, power   |
+|                       |                      | consumption rate of  |
+|                       |                      | product (kWh/unit)   |
+|                       |                      | for Germany (DE)     |
++-----------------------+----------------------+----------------------+
+| pc_nl                 | float                | Power consumption    |
+|                       |                      | coefficient, power   |
+|                       |                      | consumption rate of  |
+|                       |                      | product (kWh/unit)   |
+|                       |                      | for Netherlands (NL) |
++-----------------------+----------------------+----------------------+
+| pc_ch2                | float                | Power consumption    |
+|                       |                      | coefficient, power   |
+|                       |                      | consumption rate of  |
+|                       |                      | product (kWh/unit)   |
+|                       |                      | for Switzerland(CH2) |
++-----------------------+----------------------+----------------------+
+| ec_de                 | float                | CO₂ emission         |
+|                       |                      | coefficient, carbon  |
+|                       |                      | emission rate of     |
+|                       |                      | product (kgCO₂/unit) |
+|                       |                      | for Germany (DE)     |
++-----------------------+----------------------+----------------------+
+| ec_nl                 | float                | CO₂ emission         |
+|                       |                      | coefficient, carbon  |
+|                       |                      | emission rate of     |
+|                       |                      | product (kgCO₂/unit) |
+|                       |                      | for Netherlands (NL) |
++-----------------------+----------------------+----------------------+
+| ec_ch2                | float                | CO₂ emission         |
+|                       |                      | coefficient, carbon  |
+|                       |                      | emission rate of     |
+|                       |                      | product (kgCO₂/unit) |
+|                       |                      | for Switzerland(CH2) |
++-----------------------+----------------------+----------------------+
 
 
 Business.tag_daily

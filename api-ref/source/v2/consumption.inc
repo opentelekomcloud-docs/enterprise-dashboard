@@ -7,7 +7,7 @@ This API streams your consumption data in batches of 1,000 records. The response
 
 Please ensure you create an API Key either through the Enterprise Dashboard UI or via the Grafana API directly.
 
-Note: If the same request is made with identical parameters within 1 hour, cached data will be returned instead of fresh data.
+Note: API uses 'Europe/Berlin' as default timezone for parameters and response. If the same request is made with identical parameters within 1 hour, cached data will be returned instead of fresh data.
 
 .. rest_status_code:: success ../http-status.yaml
 
@@ -73,7 +73,7 @@ This API streams your consumption data in batches of 1,000 records. The response
 
 Please ensure you create an API Key either through the Enterprise Dashboard UI or via the Grafana API directly.
 
-Note: If the same request is made with identical parameters within 1 hour, cached data will be returned instead of fresh data.
+Note: API uses 'Europe/Berlin' as default timezone for parameters and response. If the same request is made with identical parameters within 1 hour, cached data will be returned instead of fresh data.
 
 .. rest_status_code:: success ../http-status.yaml
 
