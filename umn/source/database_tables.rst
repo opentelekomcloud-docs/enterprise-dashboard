@@ -1,7 +1,7 @@
 Database table structure
 ========================
 
-Enterprise Dashboard uses a PostgreSQL 15 Database which has certain
+Financial Dashboard uses a PostgreSQL 15 Database which has certain
 tables to use.
 
 The tables are described in the following. Based on those tables you
@@ -56,7 +56,7 @@ Limitations):
 |                           |                      | In case you need     |
 |                           |                      | more product details |
 |                           |                      | you have to join     |
-|                           |                      | in business.product  | 
+|                           |                      | in business.product  |
 |                           |                      | table.               |
 +---------------------------+----------------------+----------------------+
 | product_description       | varchar              | The name of the      |
@@ -66,7 +66,7 @@ Limitations):
 |                           |                      | the actual costs in  |
 |                           |                      | Euro, same as        |
 |                           |                      | Price*Quantity.      |
-|                           |                      | Including discounts  | 
+|                           |                      | Including discounts  |
 |                           |                      | and vouchers         |
 +---------------------------+----------------------+----------------------+
 | region                    | varchar              | The name of the      |
@@ -146,7 +146,7 @@ Limitations):
 |                           |                      | In case you need     |
 |                           |                      | more product details |
 |                           |                      | you have to join     |
-|                           |                      | in business.product  | 
+|                           |                      | in business.product  |
 |                           |                      | table.               |
 +---------------------------+----------------------+----------------------+
 | product_description       | varchar              | The name of the      |
@@ -165,11 +165,11 @@ Limitations):
 |                           |                      | the actual costs in  |
 |                           |                      | Euro, same as        |
 |                           |                      | Price*Quantity.      |
-|                           |                      | Including discounts  | 
+|                           |                      | Including discounts  |
 |                           |                      | and vouchers         |
 +---------------------------+----------------------+----------------------+
 | bill_cycle_day            | varchar              | Billing calculation  |
-|                           |                      | cycle typically      | 
+|                           |                      | cycle typically      |
 |                           |                      | daily or 1           |
 +---------------------------+----------------------+----------------------+
 | region                    | varchar              | The name of the      |
@@ -370,7 +370,7 @@ Business.reserved_packages
 
 This table gives you additional information about your additional
 subscriptions, which can be reoccuring charges or one time fee's.
-In the tables business.consumption_[daily/hourly] these datasets 
+In the tables business.consumption_[daily/hourly] these datasets
 are distinguishable via the consumption type "RC" or "OTF".
 Please note that this table is still work in progress.
 
@@ -410,27 +410,27 @@ Please note that this table is still work in progress.
 |                       |                      | Individual price     |
 |                       |                      | may differ           |
 +-----------------------+----------------------+----------------------+
-| bucket_id             | varchar              | Unique ID for each   | 
+| bucket_id             | varchar              | Unique ID for each   |
 |                       |                      | free amount per      |
-|                       |                      | month                | 
+|                       |                      | month                |
 +-----------------------+----------------------+----------------------+
-| filling_quantity      | numeric              | Already used free    | 
-|                       |                      | amount               | 
+| filling_quantity      | numeric              | Already used free    |
+|                       |                      | amount               |
 +-----------------------+----------------------+----------------------+
-| limit_quantity        | numeric              | Upper limit of free  | 
-|                       |                      | amount               | 
+| limit_quantity        | numeric              | Upper limit of free  |
+|                       |                      | amount               |
 +-----------------------+----------------------+----------------------+
-| bucket_type           | varchar              | "Bucket" if free     | 
+| bucket_type           | varchar              | "Bucket" if free     |
 |                       |                      | amount of reserved   |
 |                       |                      | package              |
 +-----------------------+----------------------+----------------------+
-| bucket_start_date     | timestamp            | Start date of a      | 
+| bucket_start_date     | timestamp            | Start date of a      |
 |                       |                      | bucket               |
 +-----------------------+----------------------+----------------------+
-| bucket_end_date       | timestamp            | End date of a        | 
+| bucket_end_date       | timestamp            | End date of a        |
 |                       |                      | bucket               |
 +-----------------------+----------------------+----------------------+
-| bucket_exp_date       | timestamp            | End date of a        | 
+| bucket_exp_date       | timestamp            | End date of a        |
 |                       |                      | bucket               |
 +-----------------------+----------------------+----------------------+
 | contract              | Int8                 | Your contract id     |
@@ -445,9 +445,9 @@ Business.contract
 This table gives you a list of contract-IDs for your
 payer account ID. This table is used in Payer
 dashboards in order to access dashboards with shower query execution time.
-The initial load is slow depending on the amount of data it needs to query 
+The initial load is slow depending on the amount of data it needs to query
 to fill this variable. Searching for all distinct contract IDs in
-business.consumption_daily has the same result as Business.contract, but 
+business.consumption_daily has the same result as Business.contract, but
 thequery itself will be resolved much quicker due to smaller datasets.
 
 +-----------------------+----------------------+----------------------+
@@ -474,22 +474,22 @@ thequery itself will be resolved much quicker due to smaller datasets.
 |                       |                      | this.                |
 +-----------------------+----------------------+----------------------+
 | currency              | varchar              | Currency used for    |
-|                       |                      | billing.             | 
+|                       |                      | billing.             |
 +-----------------------+----------------------+----------------------+
-| address_city          | varchar              | City part of the     | 
-|                       |                      | address.             | 
+| address_city          | varchar              | City part of the     |
+|                       |                      | address.             |
 +-----------------------+----------------------+----------------------+
-| address_country       | varchar              | Country part of the  | 
-|                       |                      | address.             | 
+| address_country       | varchar              | Country part of the  |
+|                       |                      | address.             |
 +-----------------------+----------------------+----------------------+
-| address_name          | varchar              | Name part of the a   | 
-|                       |                      | address.             | 
+| address_name          | varchar              | Name part of the a   |
+|                       |                      | address.             |
 +-----------------------+----------------------+----------------------+
-| address_postcode      | varchar              | Postcode part of the | 
-|                       |                      | address.             | 
+| address_postcode      | varchar              | Postcode part of the |
+|                       |                      | address.             |
 +-----------------------+----------------------+----------------------+
 | billing_email         | varchar              | Email used for       |
-|                       |                      | billing.             | 
+|                       |                      | billing.             |
 +-----------------------+----------------------+----------------------+
 | status                | varchar              | status               |
 +-----------------------+----------------------+----------------------+
@@ -500,9 +500,9 @@ thequery itself will be resolved much quicker due to smaller datasets.
 Business.dim_ol_capacity_ecs_compute
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This table is only available if you use Enterprise Dashboard Extra
+This table is only available if you use Financial Dashboard Extra
 Large. It's possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Enterprise Dashboard. The actual availability of data
+Cloud Hybrid in Financial Dashboard. The actual availability of data
 sets depends on your Hybrid Installation. Data is exported once per
 day. The “timestamp” attribute shows when the data was collected.
 
@@ -622,9 +622,9 @@ day. The “timestamp” attribute shows when the data was collected.
 Business.dim_ol_capacity_ecs_vm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This table is only available if you use Enterprise Dashboard Extra
+This table is only available if you use Financial Dashboard Extra
 Large. It’s possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Enterprise Dashboard. The actual availability of data
+Cloud Hybrid in Financial Dashboard. The actual availability of data
 sets depends on your Hybrid Installation. Data is exported once per
 day. The “timestamp” attribute shows when the data was collected.
 
@@ -716,9 +716,9 @@ day. The “timestamp” attribute shows when the data was collected.
 Business.dim_ol_capacity_evs_capacity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This table is only available if you use Enterprise Dashboard Extra
+This table is only available if you use Financial Dashboard Extra
 Large. It’s possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Enterprise Dashboard. The actual availability of data
+Cloud Hybrid in Financial Dashboard. The actual availability of data
 sets depends on your Hybrid Installation. Data is exported once per
 day. The “timestamp” attribute shows when the data was collected.
 
@@ -825,9 +825,9 @@ day. The “timestamp” attribute shows when the data was collected.
 Business.dim_ol_capacity_obs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This table is only available if you use Enterprise Dashboard Extra
+This table is only available if you use Financial Dashboard Extra
 Large. It’s possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Enterprise Dashboard. The actual availability of data
+Cloud Hybrid in Financial Dashboard. The actual availability of data
 sets depends on your Hybrid Installation. Data is exported once per
 day. The “timestamp” attribute shows when the data was collected.
 
@@ -910,9 +910,9 @@ day. The “timestamp” attribute shows when the data was collected.
 Business.dim_ol_capacity_eip
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This table is only available if you use Enterprise Dashboard Extra
+This table is only available if you use Financial Dashboard Extra
 Large. It’s possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Enterprise Dashboard. The actual availability of data
+Cloud Hybrid in Financial Dashboard. The actual availability of data
 sets depends on your Hybrid Installation. Data is exported once per
 day. The “timestamp” attribute shows when the data was collected.
 

@@ -6,7 +6,7 @@ How to
 
   There is a bug in grafana (see https://github.com/grafana/grafana/pull/61927)
   which doesn't let you edit queries anymore. To solve this problem you need
-  to go to the datasource, select the same datasource again and then the query 
+  to go to the datasource, select the same datasource again and then the query
   editor should appear again.
 
 Switch Organizations
@@ -47,12 +47,12 @@ the screen.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Each organization includes a so-called “Getting Started” dashboard,
-which contains some information relevant to new users of Enterprise
+which contains some information relevant to new users of Financial
 Dashboard. For example, all of your dashboards are listed, new
 releases from Open Telekom Cloud are visible and some basic user
 permissions are explained.
 
-Provided by Open Telekom Cloud 
+Provided by Open Telekom Cloud
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are two default consumption dashboards within each
@@ -113,7 +113,7 @@ This dashboard is available in hourly and daily data granularity.
 Business Partner consumption view (Hourly/Daily)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Business Partner Dashboards are available for users of Enterprise Dashboard
+Business Partner Dashboards are available for users of Financial Dashboard
 Large.
 
 The dashboard “Consumption view” for business partner is built up in the same way as
@@ -133,7 +133,7 @@ This dashboard is available in hourly and daily data granularity.
 Business Partner consumption view with Tags (Hourly/Daily)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Business Partner are available for users of Enterprise Dashboard
+Business Partner are available for users of Financial Dashboard
 Large.
 
 The dashboard “Global consumption view with tags” is built up in the
@@ -168,7 +168,7 @@ be found here:
 New updates in alert can be found on this page:
 
   https://grafana.com/blog/2022/06/14/grafana-alerting-explore-our-latest-updates-in-grafana-9/
- 
+
 1. Enter the widget editor by clicking “Edit”. Click on the name of a
    widget to toggle the menu shown in the following screenshot:
 

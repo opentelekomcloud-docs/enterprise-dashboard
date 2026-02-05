@@ -1,23 +1,23 @@
 Introduction
 ============
 
-Enterprise Dashboard is a web-based dashboard providing access to
+Financial Dashboard is a web-based dashboard providing access to
 billing data. It allows to check spendings for Open Telekom Cloud
 infrastructure. It comes with dedicated views for specific domains and
 their cost drivers.
 
-To enter the `Enterprise Dashboard Service <https://enterprise-dashboard.otc-service.com>`__,
+To enter the `Financial Dashboard Service <https://financial-dashboard.otc-service.com>`__,
 you need to enter your credentials. Your
 email and password are required. You will receive an invitation for
-Enterprise Dashboard, once the order is confirmed and processed. With
+Financial Dashboard, once the order is confirmed and processed. With
 this invitation, you can set the password of your user account.
 
 Your email and password are case-sensitive. Please check upper and
 lower cases before clicking Log In.
 
 .. note::
-   
-   Enterprise Dashboard is offered via Direct sales or eShop. Please
+
+   Financial Dashboard is offered via Direct sales or eShop. Please
    contact either your contractual partner to set up your access or
    contact Request-OpenTelekomCloud@telekom.de. It can be booked just as other additional services, e.g. reserved packges.
 
@@ -44,20 +44,20 @@ following link:
 Product versions
 ----------------
 
-Enterprise Dashboard is available in three versions.
+Financial Dashboard is available in three versions.
 
 +-------------------------+----------+-----------+----------+--------------+
 | Product Versions        | API      | Dashboard | Multi    | Organization |
 |                         | Access   | Self      | Tenant   | Management   |
 |                         |          | Service   |          |              |
 +=========================+==========+===========+==========+==============+
-| Enterprise Dashboard    | x        | x         |          |              |
+| Financial Dashboard    | x        | x         |          |              |
 | Small                   |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
-| Enterprise Dashboard    | x        | x         |          |              |
+| Financial Dashboard    | x        | x         |          |              |
 | Medium                  |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
-| Enterprise Dashboard    | x        | x         | x        | x            |
+| Financial Dashboard    | x        | x         | x        | x            |
 | Large                   |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
 
@@ -80,7 +80,7 @@ data from multiple tenants. Each of his tenants has only access to the
 data of the own tenant. To compare data he needs a global dashboard,
 which allows him to access and compare data of all tenants in one
 organization. Also from a financial perspective, it’s recommended to
-consume Enterprise Dashboard Large instead of multiple Enterprise
+consume Financial Dashboard Large instead of multiple Financial
 Dashboard Medium.
 
 The product feature **Organizations Management** helps you to easily
@@ -100,9 +100,9 @@ to that organization and therefore access to the global dashboard.
 API
 ---
 
-Most functionality of the Enterprise Dashboard is also available via
+Most functionality of the Financial Dashboard is also available via
 an REST HTTP endpoint for integration in other applications. Please
-refer to the `Enterprise Dashboard API Reference
+refer to the `Financial Dashboard API Reference
 <https://docs.otc.t-systems.com/enterprise-dashboard/api-ref/>`__.
 
 

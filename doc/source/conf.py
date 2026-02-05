@@ -27,7 +27,7 @@ extensions = [
 otcdocs_auto_name = False
 otcdocs_auto_version = False
 
-project = 'Enterprise Dashboard'
+project = 'Financial Dashboard'
 otcdocs_repo_name = 'opentelekomcloud-docs/enterprise-dashboard'
 # Those variables are required for edit/bug links
 
@@ -37,7 +37,7 @@ otcdocs_doc_link = ''
 otcdocs_doc_title = ''
 otcdocs_doc_type = ''
 otcdocs_service_category = 'other'
-otcdocs_service_title = 'Enterprise Dashboard'
+otcdocs_service_title = 'Financial Dashboard'
 otcdocs_service_type = 'ed'
 otcdocs_service_environment = 'public'
 otcdocs_cloud_environment = 'eu_de'
@@ -99,7 +99,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 
-html_title = "Enterprise Dashboard - Service Based View"
+html_title = "Financial Dashboard - Service Based View"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,

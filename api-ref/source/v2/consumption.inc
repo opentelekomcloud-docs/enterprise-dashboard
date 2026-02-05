@@ -5,7 +5,7 @@ Show Consumption (Hourly Granularity)
 
 This API streams your consumption data in batches of 1,000 records. The response is returned as a string, with each line representing a valid JSON object. You'll need to decode each line and parse it into JSON format on your end.
 
-Please ensure you create an API Key either through the Enterprise Dashboard UI or via the Grafana API directly.
+Please ensure you create an API Key either through the Financial Dashboard UI or via the Grafana API directly.
 
 Note: API uses 'Europe/Berlin' as default timezone for parameters and response. If the same request is made with identical parameters within 1 hour, cached data will be returned instead of fresh data.
 
@@ -71,7 +71,7 @@ Show Consumption (Daily Granularity)
 
 This API streams your consumption data in batches of 1,000 records. The response is returned as a string, with each line representing a valid JSON object. You'll need to decode each line and parse it into JSON format on your end.
 
-Please ensure you create an API Key either through the Enterprise Dashboard UI or via the Grafana API directly.
+Please ensure you create an API Key either through the Financial Dashboard UI or via the Grafana API directly.
 
 Note: API uses 'Europe/Berlin' as default timezone for parameters and response. If the same request is made with identical parameters within 1 hour, cached data will be returned instead of fresh data.
 

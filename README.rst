@@ -1,2 +1,2 @@
-Enterprise Dashboard
+Financial Dashboard
 ====================
