@@ -79,6 +79,7 @@ Overall panels:
 
 .. image:: media/image02.png
 
+
     - Each VM’s power consumption shown based on average measured power consumption per resource type,
       not real time measurements.
     - VM ID and type included, even for short-lived resources.
@@ -90,6 +91,7 @@ Overall panels:
 
 
 .. image:: media/image03.png
+
 
     - Each container power consumption shown based on average measured power consumption per resource type,
       not real time measurements.
@@ -103,6 +105,7 @@ Overall panels:
 
 .. image:: media/image04.png
 
+
     - Detailed view of databases, with resource ID and type.
     - Allocation based on compute/memory used.
     - Make informed decisions about database sizing and technology choice.
@@ -113,6 +116,7 @@ Overall panels:
 
 .. image:: media/image05.png
 
+
     - Power consumption and emissions generated per allocated GB per time of use.
     - Allows to compare the power draw differences from storage allocations based on technology
       type.
@@ -122,6 +126,7 @@ Overall panels:
 
 
 .. image:: media/image06.png
+
 
     - Power consumption and derived emissions based on total elastic IP services and aggregated
       network traffic.
@@ -149,7 +154,7 @@ Step-by-Step Guidance
 
     1.	Select Time Window. On the upper right side of the panel.
 
-        .. image:: media/image07.png
+.. image:: media/image07.png
 
     2.	Review Overall KPIs for a summary view.
     3.	Analyze totals by technology to spot high-impact areas.
@@ -162,14 +167,14 @@ Step-by-Step Guidance
     8.	Export or snapshot data for integration with internal reporting frameworks using the data explore
         option.
 
-        .. image:: media/image08.png
+.. image:: media/image08.png
 
     9.	In case of the “Overall” power or emissions panel, chose “Series joined by time” to export all
         the infrastructure categories totals, or the values per components individually.
 
-        .. image:: media/image09.png
+.. image:: media/image09.png
 
-        .. image:: media/image10.png
+.. image:: media/image10.png
 
 
 Key Capabilities
@@ -418,7 +423,7 @@ lower power intensity per GB.
 Practical example:
 Frequent cross-region replication can significantly increase energy allocation from networking and storage infrastructure.
     - Use metrics for regulatory disclosures and sustainability targets
-    
+
     1.	Export total emissions for the reporting period.
     2.	Allocate them internally to departments or cost centers.
     3.	Compare trends year-over-year.
