@@ -21,7 +21,6 @@ from datetime import datetime
 
 extensions = [
     'otcdocstheme',
-    'otc_api_ref'
 ]
 
 otcdocs_auto_name = False
@@ -33,9 +32,9 @@ otcdocs_repo_name = 'opentelekomcloud-docs/enterprise-dashboard'
 
 # Those variables are needed for indexing into OpenSearch
 otcdocs_doc_environment = 'public'
-otcdocs_doc_link = '/enterprise-dashboard/api-ref/'
-otcdocs_doc_title = 'API Reference'
-otcdocs_doc_type = 'api-ref'
+otcdocs_doc_link = '/enterprise-dashboard/sustainability/'
+otcdocs_doc_title = 'Sustainability'
+otcdocs_doc_type = 'sustainability'
 otcdocs_service_category = 'other'
 otcdocs_service_title = 'Enterprise Dashboard'
 otcdocs_service_type = 'ed'
@@ -99,7 +98,7 @@ html_theme_options = {
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 
-html_title = "Enterprise Dashboard - API Reference"
+html_title = "Enterprise Dashboard - Sustainability"
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -114,8 +113,8 @@ html_copy_source = False
 # -- Options for PDF output --------------------------------------------------
 latex_documents = [
     ('index',
-     'ed-api-ref.tex',
-    u'Enterprise Dashboard - API Reference',
+     'ed-sustainability.tex',
+    u'Enterprise Dashboard - Sustainability',
      u'OpenTelekomCloud', 'manual'),
 ]
 
