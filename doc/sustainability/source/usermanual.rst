@@ -74,6 +74,7 @@ Overall panels:
 2. Compute Service Details
 --------------------------
 
+
 .. image:: media/image02.png
 
     - Each VM’s power consumption shown based on average measured power consumption per resource type,
@@ -84,6 +85,7 @@ Overall panels:
 
 3. Containers Infrastructure Details
 ------------------------------------
+
 
 .. image:: media/image03.png
 
@@ -96,6 +98,7 @@ Overall panels:
 4.	Database Service Details
 ----------------------------
 
+
 .. image:: media/image04.png
 
     - Detailed view of databases, with resource ID and type.
@@ -105,6 +108,7 @@ Overall panels:
 5.	Storage Service Details
 ---------------------------
 
+
 .. image:: media/image05.png
 
     - Power consumption and emissions generated per allocated GB per time of use.
@@ -113,6 +117,7 @@ Overall panels:
 
 6.	Network Service Details
 ---------------------------
+
 
 .. image:: media/image06.png
 
@@ -163,7 +168,7 @@ Step-by-Step Guidance
         .. image:: media/image09.png
 
         .. image:: media/image10.png
-            
+
 
 Key Capabilities
 ----------------
