@@ -8,6 +8,7 @@
       sphinx_pdf_files:
         - ed-umn.pdf
         - ed-api-ref.pdf
+        - ed-sustainability.pdf
         - ed-alerting.pdf
     check:
       jobs:
