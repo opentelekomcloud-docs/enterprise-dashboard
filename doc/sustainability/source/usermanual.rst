@@ -7,6 +7,7 @@ Overview
 The Sustainability Dashboard for presents detailed, service-level transparency on the estimated power
 usage and related greenhouse gas emissions for customer workloads. It supports both EU-DE and EU-NL
 regions, and organizes the collected data into two main areas:
+
     - Power Consumption Reporting
     - Emissions Reporting
 
@@ -26,6 +27,7 @@ The dashboard is organized into two main sections:
 Both sections follow the same structure.
 At the top of each section, a summary panel presents the overall aggregated value for the selected period.
 Below the summary, detailed graphs break down the total into the main technology domains:
+
     - Compute
     - Container Infrastructure
     - Database Services
