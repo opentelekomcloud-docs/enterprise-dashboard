@@ -388,6 +388,7 @@ GoOs, showing the tangible benefit of clean energy procurement. And this is why 
 ------------------------------------------------------
 
     - Right-size workloads (reduce underutilized VMs)
+
     1.	Identify VMs with consistently high power consumption in the dashboard.
     2.	Cross-check CPU and memory utilization in your monitoring system.
     3.	If utilization remains low (e.g., <30%) over time while power remains constant, consider resizing
@@ -398,6 +399,7 @@ Practical example:
 A VM running at 15% average CPU utilization but consuming the same baseline power as a fully utilized instance may be
 downsized to reduce footprint.
     - Move storage to more efficient types
+
     1.	Compare power-per-GB metrics across storage classes.
     2.	Identify volumes with low IOPS or infrequent access.
     3.	Migrate archival or infrequently accessed data to lower-intensity storage tiers.
@@ -407,6 +409,7 @@ Practical example:
 Cold data stored on high-performance SSD-based storage may be moved to warm or cold tiers with significantly
 lower power intensity per GB.
     - Reduce data transfers or optimize networking
+
     1.	Review network-related power and emissions.
     2.	Identify cross-region traffic or excessive replication.
     3.	Consolidate workloads within the same region where possible.
@@ -415,6 +418,7 @@ lower power intensity per GB.
 Practical example:
 Frequent cross-region replication can significantly increase energy allocation from networking and storage infrastructure.
     - Use metrics for regulatory disclosures and sustainability targets
+    
     1.	Export total emissions for the reporting period.
     2.	Allocate them internally to departments or cost centers.
     3.	Compare trends year-over-year.
