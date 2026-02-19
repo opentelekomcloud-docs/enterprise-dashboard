@@ -141,7 +141,9 @@ Step-by-Step Guidance
 ---------------------
 
     1.	Select Time Window. On the upper right side of the panel.
+
         .. image:: media/image07.png
+
     2.	Review Overall KPIs for a summary view.
     3.	Analyze totals by technology to spot high-impact areas.
     4.	Drill down into Compute, Containers, Database, Storage, and Network details
@@ -152,11 +154,16 @@ Step-by-Step Guidance
     7.	Apply findings to optimize workload architecture and improve sustainability.
     8.	Export or snapshot data for integration with internal reporting frameworks using the data explore
         option.
+
         .. image:: media/image08.png
+
     9.	In case of the “Overall” power or emissions panel, chose “Series joined by time” to export all
         the infrastructure categories totals, or the values per components individually.
+
         .. image:: media/image09.png
+
         .. image:: media/image10.png
+            
 
 Key Capabilities
 ----------------
