@@ -21,6 +21,7 @@ from datetime import datetime
 
 extensions = [
     'otcdocstheme',
+    'otc_api_ref'
 ]
 
 otcdocs_auto_name = False
