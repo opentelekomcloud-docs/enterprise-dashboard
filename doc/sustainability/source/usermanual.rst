@@ -80,11 +80,11 @@ Overall panels:
 .. image:: media/image02.png
 
 
-    - Each VM’s power consumption shown based on average measured power consumption per resource type,
-      not real time measurements.
-    - VM ID and type included, even for short-lived resources.
-    - Enables to compare individual VM configurations, optimize workload placement, and identify
-      high-impact resources.
+- Each VM’s power consumption shown based on average measured power consumption per resource type,
+  not real time measurements.
+- VM ID and type included, even for short-lived resources.
+- Enables to compare individual VM configurations, optimize workload placement, and identify
+  high-impact resources.
 
 3. Containers Infrastructure Details
 ------------------------------------
@@ -93,11 +93,11 @@ Overall panels:
 .. image:: media/image03.png
 
 
-    - Each container power consumption shown based on average measured power consumption per resource type,
-      not real time measurements.
-    - Container ID and type included, even for short-lived resources.
-    - Enables to compare individual container cluster, optimize workload placement, and identify
-      high-impact resources.
+- Each container power consumption shown based on average measured power consumption per resource type,
+  not real time measurements.
+- Container ID and type included, even for short-lived resources.
+- Enables to compare individual container cluster, optimize workload placement, and identify
+  high-impact resources.
 
 4.	Database Service Details
 ----------------------------
@@ -106,9 +106,9 @@ Overall panels:
 .. image:: media/image04.png
 
 
-    - Detailed view of databases, with resource ID and type.
-    - Allocation based on compute/memory used.
-    - Make informed decisions about database sizing and technology choice.
+- Detailed view of databases, with resource ID and type.
+- Allocation based on compute/memory used.
+- Make informed decisions about database sizing and technology choice.
 
 5.	Storage Service Details
 ---------------------------
@@ -117,9 +117,9 @@ Overall panels:
 .. image:: media/image05.png
 
 
-    - Power consumption and emissions generated per allocated GB per time of use.
-    - Allows to compare the power draw differences from storage allocations based on technology
-      type.
+- Power consumption and emissions generated per allocated GB per time of use.
+- Allows to compare the power draw differences from storage allocations based on technology
+  type.
 
 6.	Network Service Details
 ---------------------------
@@ -128,23 +128,23 @@ Overall panels:
 .. image:: media/image06.png
 
 
-    - Power consumption and derived emissions based on total elastic IP services and aggregated
-      network traffic.
-    - Provides visibility of network usage’s role in overall power/emissions.
+- Power consumption and derived emissions based on total elastic IP services and aggregated
+  network traffic.
+- Provides visibility of network usage’s role in overall power/emissions.
 
 7.	Derived Emissions Sections
 ------------------------------
     
-    - Follows the same breakdown as power consumption, calculating emissions using region-specific
-      factors and GHG Protocol methodology.
-    - Automatically scales units (µg/mg/g/kg CO₂e) for clear interpretation.
-    - Compare emissions per service or workload, informing architectural decisions.
+- Follows the same breakdown as power consumption, calculating emissions using region-specific
+  factors and GHG Protocol methodology.
+- Automatically scales units (µg/mg/g/kg CO₂e) for clear interpretation.
+- Compare emissions per service or workload, informing architectural decisions.
 
 8.	Temporal Analysis
 ---------------------
 
-    - All data presented in daily bins enables time-based trend analysis.
-    - Supports optimization by tracking sustainability improvements or regressions over time.
+- All data presented in daily bins enables time-based trend analysis.
+- Supports optimization by tracking sustainability improvements or regressions over time.
 
 How to Use the Dashboard
 ========================
@@ -152,25 +152,25 @@ How to Use the Dashboard
 Step-by-Step Guidance
 ---------------------
 
-    1.	Select Time Window. On the upper right side of the panel.
+1.	Select Time Window. On the upper right side of the panel.
 
 .. image:: media/image07.png
 
-    2.	Review Overall KPIs for a summary view.
-    3.	Analyze totals by technology to spot high-impact areas.
-    4.	Drill down into Compute, Containers, Database, Storage, and Network details
-        Use per-resource breakdowns to identify inefficient usages.
-        Compare across resources and services.
-    5.	Switch to Derived Emissions for carbon impact insight.
-    6.	Utilize the time-based, daily aggregation to track changes and improvements.
-    7.	Apply findings to optimize workload architecture and improve sustainability.
-    8.	Export or snapshot data for integration with internal reporting frameworks using the data explore
-        option.
+2.	Review Overall KPIs for a summary view.
+3.	Analyze totals by technology to spot high-impact areas.
+4.	Drill down into Compute, Containers, Database, Storage, and Network details
+    Use per-resource breakdowns to identify inefficient usages.
+    Compare across resources and services.
+5.	Switch to Derived Emissions for carbon impact insight.
+6.	Utilize the time-based, daily aggregation to track changes and improvements.
+7.	Apply findings to optimize workload architecture and improve sustainability.
+8.	Export or snapshot data for integration with internal reporting frameworks using the data explore
+    option.
 
 .. image:: media/image08.png
 
-    9.	In case of the “Overall” power or emissions panel, chose “Series joined by time” to export all
-        the infrastructure categories totals, or the values per components individually.
+9.	In case of the “Overall” power or emissions panel, chose “Series joined by time” to export all
+    the infrastructure categories totals, or the values per components individually.
 
 .. image:: media/image09.png
 
@@ -180,20 +180,20 @@ Step-by-Step Guidance
 Key Capabilities
 ----------------
 
-    - Options to filter /service/time.
-    - Options to visualize and export data in high level detail or detailed per category.
-    - Export/download features for compliance or further analysis.
-    - Aggregated and granular resource-level metrics.
+- Options to filter /service/time.
+- Options to visualize and export data in high level detail or detailed per category.
+- Export/download features for compliance or further analysis.
+- Aggregated and granular resource-level metrics.
 
 Considerations
 --------------
 
-    - All figures are estimates, suitable for indicative/relative analysis,  for billing or utilized resources
-      details, please head to the corresponding sections in the financial dashboard or T Cloud Public Console
-      accordingly.
-    - Pay close attention to the units when exporting the data, some local configurations may affect how the
-      data is exported for further use and data conversion may result in incorrect reporting.
-    - At launch, not all cloud services may be covered initially; new coverage added incrementally.
+- All figures are estimates, suitable for indicative/relative analysis,  for billing or utilized resources
+  details, please head to the corresponding sections in the financial dashboard or T Cloud Public Console
+  accordingly.
+- Pay close attention to the units when exporting the data, some local configurations may affect how the
+  data is exported for further use and data conversion may result in incorrect reporting.
+- At launch, not all cloud services may be covered initially; new coverage added incrementally.
 
 FAQ
 ===
