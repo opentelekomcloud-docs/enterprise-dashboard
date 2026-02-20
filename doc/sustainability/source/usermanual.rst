@@ -199,7 +199,7 @@ FAQ
 ===
 
 1.	What is the  T Cloud Public sustainability dashboard?
----------------------------------------------------------
+-------------------------------------------------------------
 
 The sustainability dashboard provides visibility into the power consumption and associated emissions
 attributed to each tenant’s cloud usage. It complements the financial dashboard by adding
@@ -207,7 +207,7 @@ sustainability as an additional dimension, alongside cost and performance, to su
 disclosure reporting and more informed technical and architectural decisions.
 
 2.	What level of detail does the dashboard provide?
-----------------------------------------------------
+--------------------------------------------------------
 
 The dashboard allocates power consumption and emissions to individual cloud services, such as virtual
 machines, databases, storage, and data traffic. This service-level view enables customers to better understand
@@ -216,7 +216,7 @@ the power consumption of the same workload in different virtual machines, and ma
 only based on performance, but power consumption and environmental impact.
 
 3.	How are power consumption values calculated?
-------------------------------------------------
+----------------------------------------------------
 
 Power consumption is estimated using an architecture-based allocation approach that reflects how shared cloud
 infrastructure actually consumes energy.
@@ -229,7 +229,7 @@ This approach is meant to attribute only the portion of power each service is re
 the full power draw of the underlying hardware. 
 
 4.	How does this work in practice for virtual machines and storage?
---------------------------------------------------------------------
+------------------------------------------------------------------------
 
 For virtual machines, power consumption is broken down into components that reflect how VMs use shared servers:
 
@@ -252,7 +252,7 @@ each storage technology (for example block or object storage, SSD- or SAS-based)
 the customer’s actual usage.
 
 5.	How are emissions derived from power consumption?
------------------------------------------------------
+---------------------------------------------------------
 
 Once power consumption has been estimated for a given service and usage unit (for example VM-hours or GB-hours),
 emissions are calculated by multiplying this energy consumption by a region-specific emissions factor.
@@ -260,7 +260,7 @@ These factors reflect the carbon intensity associated with the data center locat
 the GHG Protocol market-based approach for Scope 1 and Scope 2 reporting.
 
 6.	Which emissions scopes are included?
-----------------------------------------
+--------------------------------------------
 
 The dashboard reports emissions according to the GHG Protocol market-based approach for Scope 1 and Scope 2,
 fully aligned with Deutsche Telekom Group’s corporate sustainability reporting.
@@ -271,14 +271,14 @@ fully aligned with Deutsche Telekom Group’s corporate sustainability reporting
     - Scope 3 from embedded emissions from infrastructure, are not included at this stage.
 
 7.	Are Scope 3 upstream/downstream embedded emissions planned to be included?
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 
 Yes. The inclusion of Scope 3 embedded emissions is part of the roadmap. When introduced, they will follow
 including ISO 14067 for product carbon footprinting. Until then, the dashboard remains intentionally limited
 to Scope 1 and Scope 2 to ensure methodological consistency and transparency.
 
 8.	Why do the figures differ from previous sustainability reports?
--------------------------------------------------------------------
+-----------------------------------------------------------------------
 
 The main difference is driven by an improvement on methodology. Earlier reports relied on more conservative
 allocation approaches, to address limited technical visibility available at the time. The current methodology
@@ -287,14 +287,14 @@ driven by a tenant’s workloads. As a result, figures may differ from earlier r
 This change reflects an improvement in precision rather than a change in reporting scope.
 
 9.	Does the dashboard include idle or unused infrastructure capacity?
-----------------------------------------------------------------------
+--------------------------------------------------------------------------
 
 No. Shared idle capacity and unallocated platform overhead are not attributed to customers, as they remain the
 responsibility of the cloud provider. The dashboard intentionally focuses on customer-driven consumption to ensure
 fair and meaningful attribution.
 
 10.	Does the dashboard show the total power consumption of T Cloud Public?
---------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 No. The dashboard shows only tenant-attributed power consumption and emissions, not the total power consumption of
 our data centers or the overall platform. We want to enable users to see the environmental impact associated with
@@ -302,14 +302,14 @@ their own usage, not our complete environmental footprint, for that we have our 
 Corporate Responsibility report (https://www.cr-report.telekom.com/).
 
 11.	Will all cloud services be available from the start?
---------------------------------------------------------
+------------------------------------------------------------
 
 The dashboard capabilities are introduced incrementally. Not all services are visible from day one, and additional
 services and levels of detail will be added over time. We strive for a continuous improvement approach rather than
 a static reporting snapshot.
 
 12.	How can customers use this information in practice?
--------------------------------------------------------
+-----------------------------------------------------------
 
 The dashboard is designed to support:
     - Sustainability and regulatory reporting
@@ -320,13 +320,13 @@ By presenting sustainability data with the same granularity as cost and performa
 a practical design consideration rather than a retrospective reporting exercise.
 
 13.	Is this dashboard intended to replace T-Systems’ corporate sustainability reports?
---------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
 No. The dashboard complements, but does not replace, corporate-level sustainability reporting. It provides operational,
 usage-based insights that customers can use alongside their existing reporting processes.
 
 14.	How will the dashboard evolve over time?
---------------------------------------------
+------------------------------------------------
 
 The dashboard will continue to evolve as:
 •	Additional services are onboarded
@@ -337,60 +337,60 @@ The dashboard will continue to evolve as:
 This evolution reflects our ongoing commitment to transparency, responsibility, and sustainable cloud engineering.
 
 15.	What is the granularity of the reported data?
--------------------------------------------------
+-----------------------------------------------------
 
 Data is collected hourly and aggregated with daily granularity, allowing to observe trends and consumption patterns
 hour-by-hour for storage and in 24-hour blocks for other services.
 
 16.	How does the dashboard support sustainability reporting requirements?
--------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 By providing standardized, GHG Protocol-aligned figures broken down by region and resource, the dashboard supports
 both internal transparency and external reporting for regulations or voluntary disclosures.
 
 17.	Can I compare sustainability performance between different architectural choices or services?
--------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
 
 Yes, the dashboard’s per-service and per-resource breakdown enables direct comparison. You can evaluate which VM,
 storage type, or network configuration is optimal from an environmental perspective.
 
 18.	How are shared infrastructure and platform-wide overheads treated?
-----------------------------------------------------------------------
+--------------------------------------------------------------------------
 
 Shared Data Center scale components (e.g. cooling, lighting and other non-IT components) are allocated proportionally
 using annual average PUE factors. Only the customer-attributed share is included; idle platform capacity remains with the provider.
 
 19.	Are there audit trails or methodologies documented for transparency?
-------------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 Yes, all models, assumptions, and boundaries are documented in detail, the general approach is available in the “About” section
 from the dashboard and further detail available upon request. 
 
 20.	What’s the minimum reporting unit for short-lived resources?
-----------------------------------------------------------------
+--------------------------------------------------------------------
 
 Even resources used for just one hour are reported with their full environmental impact for that period.
 
 21.	What happens if my service is not listed on the dashboard?
---------------------------------------------------------------
+------------------------------------------------------------------
 
 The dashboard is expanding incrementally. Contact your Open Telekom Cloud representative for updates or custom reporting needs.
 
 22.	Is third-party validation or certification applied to these metrics?
-------------------------------------------------------------------------
+----------------------------------------------------------------------------
 
 Metrics follow documented methodologies aligned to industry standards. Certification processes are under consideration as part
 of roadmap advances.
 
 
 23.	How do PUE and renewable energy contracts affect my results?
-----------------------------------------------------------------
+--------------------------------------------------------------------
 
 Regional PUE factors are used to allocate non-IT overhead. Electricity emission factors reflect real-world PPAs and
 GoOs, showing the tangible benefit of clean energy procurement. And this is why emissions count appears low.
 
 24.	How can I take action based on dashboard insights?
-------------------------------------------------------
+----------------------------------------------------------
 
     - Right-size workloads (reduce underutilized VMs)
 
@@ -403,6 +403,7 @@ GoOs, showing the tangible benefit of clean energy procurement. And this is why 
 Practical example:
 A VM running at 15% average CPU utilization but consuming the same baseline power as a fully utilized instance may be
 downsized to reduce footprint.
+
     - Move storage to more efficient types
 
     1.	Compare power-per-GB metrics across storage classes.
@@ -413,6 +414,7 @@ downsized to reduce footprint.
 Practical example:
 Cold data stored on high-performance SSD-based storage may be moved to warm or cold tiers with significantly
 lower power intensity per GB.
+
     - Reduce data transfers or optimize networking
 
     1.	Review network-related power and emissions.
@@ -422,6 +424,7 @@ lower power intensity per GB.
 
 Practical example:
 Frequent cross-region replication can significantly increase energy allocation from networking and storage infrastructure.
+
     - Use metrics for regulatory disclosures and sustainability targets
 
     1.	Export total emissions for the reporting period.
