@@ -158,9 +158,7 @@ Step-by-Step Guidance
 
 2.	Review Overall KPIs for a summary view.
 3.	Analyze totals by technology to spot high-impact areas.
-4.	Drill down into Compute, Containers, Database, Storage, and Network details.
-Use per-resource breakdowns to identify inefficient usages.
-Compare across resources and services.
+4.	Drill down into Compute, Containers, Database, Storage, and Network details. Use per-resource breakdowns to identify inefficient usages. Compare across resources and services.
 5.	Switch to Derived Emissions for carbon impact insight.
 6.	Utilize the time-based, daily aggregation to track changes and improvements.
 7.	Apply findings to optimize workload architecture and improve sustainability.
