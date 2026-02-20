@@ -60,7 +60,7 @@ Attention: Please be aware that the units are not harmonized: You will find kWh 
 data processing please ensure, that all data is using the same units.
 
 1. Overall Figures by Technology
---------------------------------
+------------------------------------
 
 If applicable, data for EU-DE and EU-NL are shown in the same graphs. It is not possible to select only one
 region.
@@ -74,7 +74,7 @@ Overall panels:
     - Understand immediately which services contribute most to your environmental footprint.
 
 2. Compute Service Details
---------------------------
+------------------------------
 
 
 .. image:: media/image02.png
@@ -87,7 +87,7 @@ Overall panels:
   high-impact resources.
 
 3. Containers Infrastructure Details
-------------------------------------
+----------------------------------------
 
 
 .. image:: media/image03.png
@@ -100,7 +100,7 @@ Overall panels:
   high-impact resources.
 
 4.	Database Service Details
-----------------------------
+--------------------------------
 
 
 .. image:: media/image04.png
@@ -111,7 +111,7 @@ Overall panels:
 - Make informed decisions about database sizing and technology choice.
 
 5.	Storage Service Details
----------------------------
+-------------------------------
 
 
 .. image:: media/image05.png
@@ -122,7 +122,7 @@ Overall panels:
   type.
 
 6.	Network Service Details
----------------------------
+-------------------------------
 
 
 .. image:: media/image06.png
@@ -133,7 +133,7 @@ Overall panels:
 - Provides visibility of network usage’s role in overall power/emissions.
 
 7.	Derived Emissions Sections
-------------------------------
+----------------------------------
     
 - Follows the same breakdown as power consumption, calculating emissions using region-specific
   factors and GHG Protocol methodology.
@@ -141,7 +141,7 @@ Overall panels:
 - Compare emissions per service or workload, informing architectural decisions.
 
 8.	Temporal Analysis
----------------------
+-------------------------
 
 - All data presented in daily bins enables time-based trend analysis.
 - Supports optimization by tracking sustainability improvements or regressions over time.
@@ -158,19 +158,19 @@ Step-by-Step Guidance
 
 2.	Review Overall KPIs for a summary view.
 3.	Analyze totals by technology to spot high-impact areas.
-4.	Drill down into Compute, Containers, Database, Storage, and Network details
-    Use per-resource breakdowns to identify inefficient usages.
-    Compare across resources and services.
+4.	Drill down into Compute, Containers, Database, Storage, and Network details.
+Use per-resource breakdowns to identify inefficient usages.
+Compare across resources and services.
 5.	Switch to Derived Emissions for carbon impact insight.
 6.	Utilize the time-based, daily aggregation to track changes and improvements.
 7.	Apply findings to optimize workload architecture and improve sustainability.
 8.	Export or snapshot data for integration with internal reporting frameworks using the data explore
-    option.
+option.
 
 .. image:: media/image08.png
 
 9.	In case of the “Overall” power or emissions panel, chose “Series joined by time” to export all
-    the infrastructure categories totals, or the values per components individually.
+the infrastructure categories totals, or the values per components individually.
 
 .. image:: media/image09.png
 
@@ -264,6 +264,7 @@ the GHG Protocol market-based approach for Scope 1 and Scope 2 reporting.
 
 The dashboard reports emissions according to the GHG Protocol market-based approach for Scope 1 and Scope 2,
 fully aligned with Deutsche Telekom Group’s corporate sustainability reporting.
+
     - Scope 1 is driven by the emissions from the data center backup diesel generators, used exclusively
       for testing and emergency preparedness. These represent an almost negligible share of total emissions
       but are included for transparency.
@@ -312,10 +313,12 @@ a static reporting snapshot.
 -----------------------------------------------------------
 
 The dashboard is designed to support:
+
     - Sustainability and regulatory reporting
     - Internal transparency and governance
     - Architectural comparisons between services
     - More energy/emissions-aware workload design decisions
+
 By presenting sustainability data with the same granularity as cost and performance, it enables sustainability to become
 a practical design consideration rather than a retrospective reporting exercise.
 
@@ -433,7 +436,7 @@ Frequent cross-region replication can significantly increase energy allocation f
     4.	Use reductions achieved through optimization as measurable progress indicators.
 
 25.	How can I calculate location-based emissions instead of using the market-based approach?
---------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 
 Our reporting follows the market-based methodology for Scope 2 emissions, in full alignment with applicable EU regulatory
 standards, including the EU Sustainability Disclosure Regulation (SFDR), the EU Taxonomy, and the Energy Efficiency
@@ -451,6 +454,7 @@ Location-based emissions = Reported electricity consumed (kWh) × National grid 
 When performing this calculation, ensure that power consumption is normalized to kilowatt-hours (kWh) and apply the
 EEA grid factor relevant to the reporting period you are analyzing.
 Getting Support
+
     - For guidelines to export data from Grafana, please review the available documentation in
       https://docs.otc.t-systems.com/enterprise-dashboard/umn/ or contact our helpdesk.
     - For questions regarding sustainability reporting, improvement suggestions, use the feedback feature or contact our helpdesk.
