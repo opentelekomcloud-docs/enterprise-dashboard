@@ -162,13 +162,11 @@ Step-by-Step Guidance
 5.	Switch to Derived Emissions for carbon impact insight.
 6.	Utilize the time-based, daily aggregation to track changes and improvements.
 7.	Apply findings to optimize workload architecture and improve sustainability.
-8.	Export or snapshot data for integration with internal reporting frameworks using the data explore
-option.
+8.	Export or snapshot data for integration with internal reporting frameworks using the data explore option.
 
 .. image:: media/image08.png
 
-9.	In case of the “Overall” power or emissions panel, chose “Series joined by time” to export all
-the infrastructure categories totals, or the values per components individually.
+9.	In case of the “Overall” power or emissions panel, chose “Series joined by time” to export all the infrastructure categories totals, or the values per components individually.
 
 .. image:: media/image09.png
 
