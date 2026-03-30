@@ -51,13 +51,13 @@ Financial Dashboard is available in three versions.
 |                         | Access   | Self      | Tenant   | Management   |
 |                         |          | Service   |          |              |
 +=========================+==========+===========+==========+==============+
-| Financial Dashboard    | x        | x         |          |              |
+| Financial Dashboard     | x        | x         |          |              |
 | Small                   |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
-| Financial Dashboard    | x        | x         |          |              |
+| Financial Dashboard     | x        | x         |          |              |
 | Medium                  |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
-| Financial Dashboard    | x        | x         | x        | x            |
+| Financial Dashboard     | x        | x         | x        | x            |
 | Large                   |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
 
