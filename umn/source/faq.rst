@@ -58,10 +58,10 @@ Question: Where do I reset my password?
 
 Please use this link
 
-  https://enterprise-dashboard.otc-service.com/user/password/send-reset-email
+  https://financial-dashboard.otc-service.com/user/password/send-reset-email
 
 Additionally, you can reset your password by following the “Forget
-Password” link on the login page of Enterprise Dashboard.
+Password” link on the login page of Financial Dashboard.
 
 
 Question: I can’t log in. What’s wrong?
@@ -105,7 +105,7 @@ Question: I can see some products with a cost of 0€ and some with 0.00€. Wha
 Products that have been used but are still in the free budget will be
 displayed as 0€. 0.00€ will be displayed if there are costs smaller
 than 1 cent. Technically those are still costs that will be invoiced,
-therefore they are displayed in Enterprise Dashboard. You can hide
+therefore they are displayed in Financial Dashboard. You can hide
 these products by ticking “hide series” options in the legend options
 of each panel. Please note that editing a dashboard or panel is only
 available for Editor or Admin Users.
@@ -115,7 +115,7 @@ available for Editor or Admin Users.
 Question: How do you handle daylight savings time changeover?
 -------------------------------------------------------------
 
-Within Enterprise Dashboard a changeover between summer and winter
+Within Financial Dashboard a changeover between summer and winter
 time is visible on the specific dates by observing the quantity
 field. For example, a machine that is never stopped will have a
 runtime of 23 hours on the 28\ :sup:`th` of March 2021 and 25 hours on
@@ -128,11 +128,11 @@ Below you will find the runtime of a unique machine, which was running
 
 .. image:: media/image33.png
 
-Question: Which version of Enterprise Dashboard do I have?
+Question: Which version of Financial Dashboard do I have?
 ----------------------------------------------------------
 
-Enterprise Dashboard will be listed within your invoice, therefore you
-can see Enterprise Dashboard within your consumption data. Enterprise
+Financial Dashboard will be listed within your invoice, therefore you
+can see Financial Dashboard within your consumption data. Financial
 Dashboard is billed on the first day of a month.
 
 Question: The query editor is not displayed anymore and i can't edit it anymore. How can i solve this?

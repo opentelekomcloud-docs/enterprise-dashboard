@@ -1,7 +1,7 @@
 Configuration and Customization
 ===============================
 
-The Enterprise Dashboard comes ready to use. However, to customize
+The Financial Dashboard comes ready to use. However, to customize
 access in a role based manner, you can define users with certain
 capabilities and configure organizations.
 
@@ -9,7 +9,7 @@ capabilities and configure organizations.
 User management
 ---------------
 
-After booking Enterprise Dashboard Open Telekom Cloud will provide you
+After booking Financial Dashboard Open Telekom Cloud will provide you
 an admin account for your organization. An organization contains all
 contracts owned by your company. With this admin account, you can set
 up (invite) additional users for either your complete organization, a
@@ -17,7 +17,7 @@ global view, or certain tenants, a tenant view. Be aware that the
 invitation will be valid for 30 days before expiring. The initial
 admin account will be created in each organization that represents
 your company. You will find more information about the organization
-and how they are utilized in Enterprise Dashboard in the next chapter.
+and how they are utilized in Financial Dashboard in the next chapter.
 
 The following user groups are available in an organization:
 
@@ -58,10 +58,10 @@ organizations you are part of and which permissions you have.
 Organization
 ------------
 
-Enterprise Dashboard is utilizing Grafana’s built in organization
+Financial Dashboard is utilizing Grafana’s built in organization
 feature, to separate your individual tenants (or in financial terms
 your contracts) from each other. Open Telekom Cloud will give you
-depending on your Enterprise Dashboard version access to either a
+depending on your Financial Dashboard version access to either a
 single or multiple/all tenants. Your organization is split into
 several Grafana organizations, depending on the number of tenants you
 are currently using.
@@ -83,7 +83,7 @@ In the following there are some examples:
   receive some global dashboards, depending on your preferences.
 
 This allows you to set up either dedicated user accounts within
-Enterprise Dashboard to view just one tenant, or an overall view if
+Financial Dashboard to view just one tenant, or an overall view if
 you grant them access to your global dashboard.
 
 
@@ -100,8 +100,8 @@ In the following you will see a list of current limitations:
   from Tenant Switcher, used in Payer based Dashboard) is not
   supported in Grafana.
 
-- VAT or other taxes are not included in Enterprise Dashboard.
+- VAT or other taxes are not included in Financial Dashboard.
 
--  Any form of discounts are currently not available in Enterprise Dashboard
+-  Any form of discounts are currently not available in Financial Dashboard
    All prices are according to publicly available price lists. Refer to: https://www.open-telekom-cloud.com/service-description
-   
+

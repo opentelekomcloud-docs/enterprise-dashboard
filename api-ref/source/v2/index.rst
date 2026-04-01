@@ -1,7 +1,7 @@
 :tocdepth: 3
 
 =====================================
-Enterprise Dashboard API v2 (Current)
+Financial Dashboard API v2 (Current)
 =====================================
 
 As an admin user of your organization, you can create API keys, these API keys will allow you to gather consumption data
