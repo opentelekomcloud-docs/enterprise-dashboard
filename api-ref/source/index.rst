@@ -1,4 +1,4 @@
-Open Telekom Cloud Financial Dashboard API
+Financial Dashboard API
 ===========================================
 
 Financial Dashboard provides a RESTful API, which gives you access to your consumption data and several APIs of Grafana

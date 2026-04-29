@@ -13,9 +13,8 @@ organization.
 Business.consumption_daily
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This table represents your billing data according to your Open Telekom
-Cloud invoice (except limitations listed in chapter Current
-Limitations):
+This table represents your billing data according to your T Cloud Public
+invoice (except limitations listed in chapter Current Limitations):
 
 +---------------------------+----------------------+----------------------+
 | Field name                | Data type            | Description          |
@@ -103,9 +102,8 @@ Limitations):
 Business.consumption_hourly
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This table represents your billing data according to your Open Telekom
-Cloud invoice (except limitations listed in chapter Current
-Limitations):
+This table represents your billing data according to your T Cloud Public
+invoice (except limitations listed in chapter Current Limitations):
 
 +---------------------------+----------------------+----------------------+
 | Field name                | Data type            | Description          |
@@ -501,10 +499,10 @@ Business.dim_ol_capacity_ecs_compute
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This table is only available if you use Financial Dashboard Extra
-Large. It's possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Financial Dashboard. The actual availability of data
-sets depends on your Hybrid Installation. Data is exported once per
-day. The “timestamp” attribute shows when the data was collected.
+Large. It's possible to receive Capacity data of your T Cloud Public
+Hybrid in Financial Dashboard. The actual availability of data sets
+depends on your Hybrid Installation. Data is exported once per day.
+The “timestamp” attribute shows when the data was collected.
 
 +-------------------------+----------------------+-----------------------+
 | Field name              | Data type            | Description           |
@@ -623,10 +621,10 @@ Business.dim_ol_capacity_ecs_vm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This table is only available if you use Financial Dashboard Extra
-Large. It’s possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Financial Dashboard. The actual availability of data
-sets depends on your Hybrid Installation. Data is exported once per
-day. The “timestamp” attribute shows when the data was collected.
+Large. It’s possible to receive Capacity data of your T Cloud Public
+Hybrid in Financial Dashboard. The actual availability of data sets
+depends on your Hybrid Installation. Data is exported once per day.
+The “timestamp” attribute shows when the data was collected.
 
 +-------------------------+----------------------+-----------------------+
 | Field name              | Data type            | Description           |
@@ -717,10 +715,10 @@ Business.dim_ol_capacity_evs_capacity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This table is only available if you use Financial Dashboard Extra
-Large. It’s possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Financial Dashboard. The actual availability of data
-sets depends on your Hybrid Installation. Data is exported once per
-day. The “timestamp” attribute shows when the data was collected.
+Large. It’s possible to receive Capacity data of your T Cloud Public
+Hybrid in Financial Dashboard. The actual availability of data sets
+depends on your Hybrid Installation. Data is exported once per day.
+The “timestamp” attribute shows when the data was collected.
 
 +-------------------------+----------------------+-----------------------+
 | Field name              | Data type            | Description           |
@@ -826,10 +824,10 @@ Business.dim_ol_capacity_obs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This table is only available if you use Financial Dashboard Extra
-Large. It’s possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Financial Dashboard. The actual availability of data
-sets depends on your Hybrid Installation. Data is exported once per
-day. The “timestamp” attribute shows when the data was collected.
+Large. It’s possible to receive Capacity data of your T Cloud Public
+Hybrid in Financial Dashboard. The actual availability of data sets
+depends on your Hybrid Installation. Data is exported once per day.
+The “timestamp” attribute shows when the data was collected.
 
 +-------------------------+----------------------+-----------------------+
 | Field name              | Data type            | Description           |
@@ -911,10 +909,10 @@ Business.dim_ol_capacity_eip
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This table is only available if you use Financial Dashboard Extra
-Large. It’s possible to receive Capacity data of your Open Telekom
-Cloud Hybrid in Financial Dashboard. The actual availability of data
-sets depends on your Hybrid Installation. Data is exported once per
-day. The “timestamp” attribute shows when the data was collected.
+Large. It’s possible to receive Capacity data of your T Cloud Public
+Hybrid in Financial Dashboard. The actual availability of data sets
+depends on your Hybrid Installation. Data is exported once per day.
+The “timestamp” attribute shows when the data was collected.
 
 +-------------------------+----------------------+-----------------------+
 | Field name              | Data type            | Description           |

@@ -49,15 +49,15 @@ the screen.
 Each organization includes a so-called “Getting Started” dashboard,
 which contains some information relevant to new users of Financial
 Dashboard. For example, all of your dashboards are listed, new
-releases from Open Telekom Cloud are visible and some basic user
+releases from T Cloud Public are visible and some basic user
 permissions are explained.
 
-Provided by Open Telekom Cloud
+Provided by T Cloud Public
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are two default consumption dashboards within each
-organization. Dashboards provided by Open Telekom Cloud are
-located in the folder “Provided by Open Telekom Cloud”.
+organization. Dashboards provided by T Cloud Public are
+located in the folder “Provided by T Cloud Public”.
 
 .. image:: media/image09.png
 
@@ -93,7 +93,7 @@ display all of them.
 
 For example, you can select the Tag Key
 “CCE-Dynamic-Provisioning-Node” to see your Container Costs within
-Open Telekom Cloud. Elastic Cloud Servers spawned within a Cloud
+T Cloud Public. Elastic Cloud Servers spawned within a Cloud
 Container Engine Node have this Key-Value Pair attached to it.
 
 .. image:: media/image12.png
@@ -154,7 +154,7 @@ Alerts
 ~~~~~~
 
 Grafana provides built-in alerting functionalities. Please note that
-alerts on OTC provided Dashboard are deleted once the dashboard gets
+alerts on T Cloud Public provided Dashboard are deleted once the dashboard gets
 an update. We recommend creating copies of the widgets you want to
 monitor in a new dashboard and/or folder.
 

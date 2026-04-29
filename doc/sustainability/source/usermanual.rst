@@ -373,7 +373,7 @@ Even resources used for just one hour are reported with their full environmental
 21.	What happens if my service is not listed on the dashboard?
 ------------------------------------------------------------------
 
-The dashboard is expanding incrementally. Contact your Open Telekom Cloud representative for updates or custom reporting needs.
+The dashboard is expanding incrementally. Contact your T Cloud Public representative for updates or custom reporting needs.
 
 22.	Is third-party validation or certification applied to these metrics?
 ----------------------------------------------------------------------------
