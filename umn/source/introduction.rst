@@ -2,7 +2,7 @@ Introduction
 ============
 
 Financial Dashboard is a web-based dashboard providing access to
-billing data. It allows to check spendings for Open Telekom Cloud
+billing data. It allows to check spendings for T Cloud Public
 infrastructure. It comes with dedicated views for specific domains and
 their cost drivers.
 

@@ -9,7 +9,7 @@ capabilities and configure organizations.
 User management
 ---------------
 
-After booking Financial Dashboard Open Telekom Cloud will provide you
+After booking Financial Dashboard T Cloud Public will provide you
 an admin account for your organization. An organization contains all
 contracts owned by your company. With this admin account, you can set
 up (invite) additional users for either your complete organization, a
@@ -60,7 +60,7 @@ Organization
 
 Financial Dashboard is utilizing Grafana’s built in organization
 feature, to separate your individual tenants (or in financial terms
-your contracts) from each other. Open Telekom Cloud will give you
+your contracts) from each other. T Cloud Public will give you
 depending on your Financial Dashboard version access to either a
 single or multiple/all tenants. Your organization is split into
 several Grafana organizations, depending on the number of tenants you
