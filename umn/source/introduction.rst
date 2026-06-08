@@ -54,7 +54,7 @@ Financial Dashboard is available in three versions.
 | Financial Dashboard     | x        | x         |          |              |
 | Small                   |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
-| Financial Dashboard     | x        | x         |          |              |
+| Financial Dashboard     | x        | x         | x        |              |
 | Medium                  |          |           |          |              |
 +-------------------------+----------+-----------+----------+--------------+
 | Financial Dashboard     | x        | x         | x        | x            |
