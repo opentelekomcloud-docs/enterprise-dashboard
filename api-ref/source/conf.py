@@ -21,7 +21,6 @@ from datetime import datetime
 
 extensions = [
     'otcdocstheme',
-    'otc_api_ref'
 ]
 
 otcdocs_auto_name = False
@@ -33,7 +32,7 @@ otcdocs_repo_name = 'opentelekomcloud-docs/enterprise-dashboard'
 
 # Those variables are needed for indexing into OpenSearch
 otcdocs_doc_environment = 'public'
-otcdocs_doc_link = '/enterprise-dashboard/api-ref/'
+otcdocs_doc_link = '/financial-dashboard/api-ref/'
 otcdocs_doc_title = 'API Reference'
 otcdocs_doc_type = 'api-ref'
 otcdocs_service_category = 'other'

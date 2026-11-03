@@ -32,7 +32,7 @@ otcdocs_repo_name = 'opentelekomcloud-docs/enterprise-dashboard'
 
 # Those variables are needed for indexing into OpenSearch
 otcdocs_doc_environment = 'public'
-otcdocs_doc_link = '/enterprise-dashboard/umn/'
+otcdocs_doc_link = '/financial-dashboard/umn/'
 otcdocs_doc_title = 'User Guide'
 otcdocs_doc_type = 'umn'
 otcdocs_service_category = 'other'
