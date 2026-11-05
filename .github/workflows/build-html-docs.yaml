@@ -17,7 +17,7 @@ jobs:
         uses: opentelekomcloud-infra/github-actions/.github/actions/tox-upload-swift@v1
         with:
           docs_path: "doc/build/html"
-          docs_service: enterprise-dashboard
+          docs_service: financial-dashboard
           swift_container: "gh_action_logs"
           otc_swift_preview_endpoint: ${{ secrets.OTC_SWIFT_PREVIEW_ENDPOINT }}
           otc_swift_username: ${{ secrets.OTC_SWIFT_USERNAME }}
